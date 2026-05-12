@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TPU Filament - The Flexible Solution</title>
+  <style>
+    /* TPU Page Specific Styles - Scoped for Embedding */
+    body.tpu-body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: linear-gradient(180deg, #F0F8FF, #E6F2FF);
+      color: #1A5276;
+      line-height: 1.6;
+    }
+
+    .tpu-body * { box-sizing: border-box; }
+
+    .tpu-header {
+      padding: 3rem 2rem 2rem;
+    }
+
+    .tpu-title {
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+      color: #2980B9;
+    }
+
+    .tpu-intro {
+      font-size: 1.2rem;
+      color: #5DADE2;
+      max-width: 1000px;
+    }
+
+    .tpu-main {
+      padding: 2rem;
+    }
+
+    .tpu-section {
+      margin-bottom: 3.5rem;
+    }
+
+    .tpu-section-title {
+      font-size: 2rem;
+      margin-bottom: 0.75rem;
+      border-left: 4px solid #5DADE2;
+      padding-left: 0.75rem;
+      color: #2980B9;
+    }
+
+    .tpu-text {
+      max-width: 1000px;
+      font-size: 1.05rem;
+      margin-bottom: 1rem;
+    }
+
+    .tpu-list {
+      padding-left: 1.5rem;
+      max-width: 1000px;
+    }
+
+    .tpu-list-item {
+      margin-bottom: 0.6rem;
+    }
+
+    .tpu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .tpu-feature-card {
+      background: linear-gradient(180deg, #5DADE2, #2980B9);
+      color: #FFFFFF;
+      border-radius: 16px;
+      padding: 1.5rem;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    .tpu-card-title {
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+    }
+
+    .tpu-highlight-box {
+      background: rgba(93, 173, 226, 0.15);
+      border-left: 4px solid #5DADE2;
+      padding: 1.25rem 1.5rem;
+      margin: 1.5rem 0;
+      max-width: 1000px;
+      border-radius: 0 8px 8px 0;
+    }
+
+    .tpu-highlight-box strong {
+      color: #2980B9;
+    }
+
+    .tpu-warning-box {
+      background: rgba(231, 76, 60, 0.15);
+      border: 1px solid #E74C3C;
+      border-left: 4px solid #E74C3C;
+      padding: 1rem 1.25rem;
+      margin: 1.5rem 0;
+      max-width: 1000px;
+    }
+
+    .tpu-tip-box {
+      background: rgba(46, 204, 113, 0.15);
+      border: 1px solid #2ECC71;
+      border-left: 4px solid #2ECC71;
+      padding: 1rem 1.25rem;
+      margin: 1.5rem 0;
+      max-width: 1000px;
+    }
+
+    .tpu-link {
+      color: #2980B9;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .tpu-link:hover {
+      text-decoration: underline;
+    }
+
+    .tpu-property-table {
+      border-collapse: collapse;
+      width: 100%;
+      max-width: 1000px;
+      margin: 1.5rem 0;
+    }
+
+    .tpu-table-header, .tpu-table-cell {
+      border: 1px solid #5DADE2;
+      padding: 0.75rem;
+      text-align: left;
+    }
+
+    .tpu-table-header {
+      background-color: rgba(93, 173, 226, 0.2);
+    }
+
+    .tpu-hardness-container {
+      width: 100%;
+      max-width: 1000px;
+      margin: 1.5rem 0;
+      background: white;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .tpu-hardness-title {
+      margin-top: 0;
+      color: #2980B9;
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+    }
+
+    .tpu-hardness-scale {
+      height: 30px;
+      border-radius: 15px;
+      background: linear-gradient(to right, 
+        #AED6F1 0%, 
+        #85C1E9 25%, 
+        #3498DB 50%, 
+        #21618C 75%, 
+        #1B4F72 100%);
+      position: relative;
+      margin: 1rem 0;
+    }
+
+    .tpu-hardness-marker {
+      position: absolute;
+      top: -5px;
+      width: 2px;
+      height: 40px;
+      background: #1A5276;
+    }
+
+    .tpu-hardness-label {
+      position: absolute;
+      top: 40px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #1A5276;
+      transform: translateX(-50%);
+    }
+
+    .tpu-hardness-description {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 1rem;
+      margin-top: 3rem;
+    }
+
+    .tpu-hardness-item {
+      text-align: center;
+    }
+
+    .tpu-hardness-value {
+      font-weight: bold;
+      font-size: 1.1rem;
+      color: #2980B9;
+      margin-bottom: 0.5rem;
+    }
+
+    .tpu-hardness-text {
+      font-size: 0.9rem;
+      color: #1A5276;
+    }
+  </style>
+</head>
+<body class="tpu-body">
+
+<header class="tpu-header">
+  <h1 class="tpu-title">TPU Filament</h1>
+  <p class="tpu-intro">
+    Thermoplastic Polyurethane (TPU) is a flexible filament that bridges the gap between rigid plastics and rubber. With its unique combination of elasticity, durability, and shock absorption, TPU opens up new possibilities for functional prints that need to bend, flex, or absorb impacts.
+  </p>
+</header>
+
+<main class="tpu-main">
+
+  <section class="tpu-section">
+    <h2 class="tpu-section-title">What Is TPU?</h2>
+    <p class="tpu-text">
+      TPU is a class of polyurethane plastics that combines the processing advantages of thermoplastics with the elastic properties of rubber. It consists of both hard and soft segments in its molecular structure, giving it a unique balance of flexibility and strength.
+    </p>
+    <div class="tpu-highlight-box">
+      <strong>The Flexible Problem-Solver:</strong> TPU can stretch, compress, and return to its original shape, making it ideal for protective cases, seals, gaskets, and any application where flexibility and impact resistance are more important than rigidity.
+    </div>
+  </section>
+
+  <section class="tpu-section">
+    <h2 class="tpu-section-title">Key Properties & Characteristics</h2>
+    <table class="tpu-property-table">
+      <tr>
+        <th class="tpu-table-header">Property</th>
+        <th class="tpu-table-header">Description</th>
+      </tr>
+      <tr>
+        <td class="tpu-table-cell"><strong>Print Temperature</strong></td>
+        <td class="tpu-table-cell">210°C - 230°C (Nozzle)</td>
+      </tr>
+      <tr>
+        <td class="tpu-table-cell"><strong>Bed Temperature</strong></td>
+        <td class="tpu-table-cell">40°C - 60°C (Recommended)</td>
+      </tr>
+      <tr>
+        <td class="tpu-table-cell"><strong>Flexibility</strong></td>
+        <td class="tpu-table-cell">High - Can stretch 300-600% before breaking</td>
+      </tr>
+      <tr>
+        <td class="tpu-table-cell"><strong>Shore Hardness</strong></td>
+        <td class="tpu-table-cell">Typically 85A-95A (Soft to Semi-rigid)</td>
+      </tr>
+      <tr>
+        <td class="tpu-table-cell"><strong>Abrasion Resistance</strong></td>
+        <td class="tpu-table-cell">Excellent - Outwears many rigid plastics</td>
+      </tr>
+      <tr>
+        <td class="tpu-table-cell"><strong>Chemical Resistance</strong></td>
+        <td class="tpu-table-cell">Good resistance to oils, greases, and many solvents</td>
+      </tr>
+      <tr>
+        <td class="tpu-table-cell"><strong>Layer Adhesion</strong></td>
+        <td class="tpu-table-cell">Excellent - Layers fuse together seamlessly</td>
+      </tr>
+      <tr>
+        <td class="tpu-table-cell"><strong>Moisture Absorption</strong></td>
+        <td class="tpu-table-cell">Moderate - Should be stored dry</td>
+      </tr>
+      <tr>
+        <td class="tpu-table-cell"><strong>Transparency</strong></td>
+        <td class="tpu-table-cell">Available in translucent/transparent formulations</td>
+      </tr>
+    </table>
+    
+    <div class="tpu-hardness-container">
+      <h3 class="tpu-hardness-title">Shore Hardness Scale (A Scale)</h3>
+      <p class="tpu-text">TPU hardness is measured on the Shore A scale. Lower numbers indicate softer, more flexible material:</p>
+      
+      <div class="tpu-hardness-scale">
+        <div class="tpu-hardness-marker" style="left: 0%;"></div>
+        <div class="tpu-hardness-marker" style="left: 25%;"></div>
+        <div class="tpu-hardness-marker" style="left: 50%;"></div>
+        <div class="tpu-hardness-marker" style="left: 75%;"></div>
+        <div class="tpu-hardness-marker" style="left: 100%;"></div>
+        
+        <div class="tpu-hardness-label" style="left: 0%;">85A</div>
+        <div class="tpu-hardness-label" style="left: 25%;">90A</div>
+        <div class="tpu-hardness-label" style="left: 50%;">95A</div>
+        <div class="tpu-hardness-label" style="left: 75%;">98A</div>
+        <div class="tpu-hardness-label" style="left: 100%;">100A</div>
+      </div>
+      
+      <div class="tpu-hardness-description">
+        <div class="tpu-hardness-item">
+          <div class="tpu-hardness-value">85A</div>
+          <div class="tpu-hardness-text">Very Soft<br>Rubber band feel</div>
+        </div>
+        <div class="tpu-hardness-item">
+          <div class="tpu-hardness-value">90A</div>
+          <div class="tpu-hardness-text">Soft<br>Shoe sole feel</div>
+        </div>
+        <div class="tpu-hardness-item">
+          <div class="tpu-hardness-value">95A</div>
+          <div class="tpu-hardness-text">Semi-Rigid<br>Most common TPU</div>
+        </div>
+        <div class="tpu-hardness-item">
+          <div class="tpu-hardness-value">98A</div>
+          <div class="tpu-hardness-text">Firm<br>Hard rubber feel</div>
+        </div>
+        <div class="tpu-hardness-item">
+          <div class="tpu-hardness-value">100A</div>
+          <div class="tpu-hardness-text">Very Firm<br>Approaching rigid</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="tpu-section">
+    <h2 class="tpu-section-title">TPU Variants & Special Formulations</h2>
+    <div class="tpu-grid">
+      <div class="tpu-feature-card">
+        <h3 class="tpu-card-title">Standard TPU (85A-95A)</h3>
+        <p>
+          General purpose flexible filament. Good balance of flexibility and printability. Most common for phone cases, protective covers, and flexible joints.
+        </p>
+      </div>
+      <div class="tpu-feature-card">
+        <h3 class="tpu-card-title">High-Performance TPU</h3>
+        <p>
+          Enhanced formulations with better layer adhesion, higher temperature resistance, or improved chemical resistance for demanding applications.
+        </p>
+      </div>
+      <div class="tpu-feature-card">
+        <h3 class="tpu-card-title">Polyester-based TPU</h3>
+        <p>
+          Better hydrolysis resistance, UV stability, and low-temperature flexibility. Often used for outdoor applications.
+        </p>
+      </div>
+      <div class="tpu-feature-card">
+        <h3 class="tpu-card-title">Polyether-based TPU</h3>
+        <p>
+          Superior flexibility at low temperatures, better microbial resistance. Common in medical and marine applications.
+        </p>
+      </div>
+      <div class="tpu-feature-card">
+        <h3 class="tpu-card-title">Color-Changing TPU</h3>
+        <p>
+          Thermochromic or photochromic variants that change color with temperature or UV light exposure.
+        </p>
+      </div>
+      <div class="tpu-feature-card">
+        <h3 class="tpu-card-title">Composite TPU</h3>
+        <p>
+          Mixed with materials like carbon fiber or glass fiber to increase stiffness while maintaining some flexibility.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="tpu-section">
+    <h2 class="tpu-section-title">Printing TPU: Challenges & Solutions</h2>
+    
+    <div class="tpu-warning-box">
+      <strong>⚠️ Extruder Design is Critical:</strong> TPU's flexibility makes it challenging to feed through many extruder designs. Bowden tube setups are particularly problematic.
+    </div>
+    
+    <div class="tpu-grid">
+      <div class="tpu-feature-card">
+        <h3 class="tpu-card-title">Extruder Type</h3>
+        <p>
+          <strong>Direct Drive:</strong> Highly recommended. Short path from gears to nozzle minimizes compression.<br>
+          <strong>Bowden:</strong> Difficult but possible with slow speeds, perfectly calibrated retraction, and low friction tubes.
+        </p>
+      </div>
+      <div class="tpu-feature-card">
+        <h3 class="tpu-card-title">Retraction Settings</h3>
+        <p>
+          <strong>Minimal Retraction:</strong> 1-3mm maximum<br>
+          <strong>Slow Speed:</strong> 20-30 mm/s<br>
+          Excessive retraction can cause jams as TPU compresses in the hotend
+        </p>
+      </div>
+      <div class="tpu-feature-card">
+        <h3 class="tpu-card-title">Print Speed</h3>
+        <p>
+          <strong>Slow is Key:</strong> 15-30 mm/s for best results<br>
+          <strong>First Layer:</strong> 10-15 mm/s<br>
+          <strong>Travel Speed:</strong> 80-100 mm/s to minimize stringing
+        </p>
+      </div>
+      <div class="tpu-feature-card">
+        <h3 class="tpu-card-title">Temperature Control</h3>
+        <p>
+          <strong>Nozzle:</strong> 220-230°C typical<br>
+          <strong>Bed:</strong> 50-60°C (not strictly required but helps)<br>
+          <strong>No Cooling Fan</strong> or minimal (10-20% max)
+        </p>
+      </div>
+    </div>
+    
+    <div class="tpu-tip-box">
+      <strong>Pro Tip:</strong> If using a Bowden setup, print a "flexible filament helper" - a small piece that guides filament straight into the extruder gears, preventing it from buckling.
+    </div>
+  </section>
+
+  <section class="tpu-section">
+    <h2 class="tpu-section-title">Optimal Printing Settings</h2>
+    <div class="tpu-grid">
+      <div class="tpu-feature-card">
+        <h3 class="tpu-card-title">Slicer Settings</h3>
+        <p>
+          <strong>Layer Height:</strong> 0.2-0.3mm<br>
+          <strong>Line Width:</strong> 0.4-0.5mm (wider is better)<br>
+          <strong>Infill:</strong> 20-50% (gyroid works well)<br>
+          <strong>Walls:</strong> 2-3 (more walls = less flexible)
+        </p>
+      </div>
+      <div class="tpu-feature-card">
+        <h3 class="tpu-card-title">Adhesion & Bed</h3>
+        <p>
+          <strong>Surface:</strong> PEI, BuildTak, or glass with glue stick<br>
+          <strong>First Layer:</strong> 120-150% flow rate<br>
+          <strong>Z-offset:</strong> Slightly closer than normal for good squish
+        </p>
+      </div>
+      <div class="tpu-feature-card">
+        <h3 class="tpu-card-title">Flow & Extrusion</h3>
+        <p>
+          <strong>Flow Rate:</strong> 95-105% (calibrate for your filament)<br>
+          <strong>Pressure Advance:</strong> If available, helps with corners<br>
+          <strong>Coasting:</strong> Enable to reduce blobs
+        </p>
+      </div>
+      <div class="tpu-feature-card">
+        <h3 class="tpu-card-title">Supports</h3>
+        <p>
+          <strong>Avoid if possible</strong> - very difficult to remove<br>
+          <strong>If needed:</strong> Tree supports with large interface gap<br>
+          <strong>Orientation:</strong> Design to minimize overhangs
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="tpu-section">
+    <h2 class="tpu-section-title">Strengths of TPU</h2>
+    <ul class="tpu-list">
+      <li class="tpu-list-item"><strong>Exceptional Flexibility & Elasticity:</strong> Can stretch and return to original shape repeatedly without permanent deformation.</li>
+      <li class="tpu-list-item"><strong>Outstanding Impact Resistance:</strong> Absorbs shocks and vibrations better than any rigid filament.</li>
+      <li class="tpu-list-item"><strong>Excellent Abrasion Resistance:</strong> Wears well in high-friction applications, often outperforming nylon and PETG.</li>
+      <li class="tpu-list-item"><strong>Good Chemical Resistance:</strong> Resists oils, greases, and many chemicals.</li>
+      <li class="tpu-list-item"><strong>Water Resistance:</strong> Naturally waterproof - ideal for seals, gaskets, and marine applications.</li>
+      <li class="tpu-list-item"><strong>Excellent Layer Adhesion:</strong> Layers bond strongly, creating durable, flexible parts.</li>
+      <li class="tpu-list-item"><strong>Transparency Options:</strong> Can be printed in clear/translucent forms for see-through flexible parts.</li>
+      <li class="tpu-list-item"><strong>Wide Temperature Range:</strong> Remains flexible from -40°C to +80°C in many formulations.</li>
+    </ul>
+  </section>
+
+  <section class="tpu-section">
+    <h2 class="tpu-section-title">Limitations & Considerations</h2>
+    <ul class="tpu-list">
+      <li class="tpu-list-item"><strong>Challenging to Print:</strong> Requires specific extruder setup and slow print speeds.</li>
+      <li class="tpu-list-item"><strong>Stringing & Oozing:</strong> Prone to stringing due to its flexible nature.</li>
+      <li class="tpu-list-item"><strong>Poor Dimensional Accuracy:</strong> Flexible nature means parts may not hold tight tolerances.</li>
+      <li class="tpu-list-item"><strong>Supports Are Difficult:</strong> Removing supports from flexible prints often damages the part.</li>
+      <li class="tpu-list-item"><strong>Limited Heat Resistance:</strong> Softens at relatively low temperatures (60-80°C).</li>
+      <li class="tpu-list-item"><strong>Moisture Absorption:</strong> Absorbs moisture from air, affecting print quality if not stored properly.</li>
+      <li class="tpu-list-item"><strong>Not Food Safe:</strong> Even food-grade TPU isn't recommended for prolonged food contact.</li>
+      <li class="tpu-list-item"><strong>Higher Cost:</strong> Typically more expensive than PLA or PETG.</li>
+    </ul>
+  </section>
+
+  <section class="tpu-section">
+    <h2 class="tpu-section-title">Ideal Applications</h2>
+    <p class="tpu-text">TPU excels where flexibility, shock absorption, or rubber-like properties are needed.</p>
+    <div class="tpu-grid">
+      <div class="tpu-feature-card">
+        <h3 class="tpu-card-title">Protective Cases</h3>
+        <p>
+          Phone cases, tablet covers, camera housings, and electronic enclosures that absorb impacts.
+        </p>
+      </div>
+      <div class="tpu-feature-card">
+        <h3 class="tpu-card-title">Wearables & Grips</h3>
+        <p>
+          Watch bands, helmet liners, tool handles, and ergonomic grips that conform to shapes.
+        </p>
+      </div>
+      <div class="tpu-feature-card">
+        <h3 class="tpu-card-title">Seals & Gaskets</h3>
+        <p>
+          Custom O-rings, door seals, waterproof gaskets, and plumbing applications.
+        </p>
+      </div>
+      <div class="tpu-feature-card">
+        <h3 class="tpu-card-title">Medical & Rehabilitation</h3>
+        <p>
+          Prosthetic liners, orthopedic devices, and cushioning elements for medical equipment.
+        </p>
+      </div>
+      <div class="tpu-feature-card">
+        <h3 class="tpu-card-title">Robotics & Drones</h3>
+        <p>
+          Flexible joints, vibration dampeners, protective bumpers, and compliant mechanisms.
+        </p>
+      </div>
+      <div class="tpu-feature-card">
+        <h3 class="tpu-card-title">Shoe Insoles & Sports</h3>
+        <p>
+          Custom insoles, cleat covers, sports equipment padding, and performance gear.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="tpu-section">
+    <h2 class="tpu-section-title">Post-Processing & Finishing</h2>
+    <div class="tpu-grid">
+      <div class="tpu-feature-card">
+        <h3 class="tpu-card-title">Trimming & Cleaning</h3>
+        <p>
+          Use sharp scissors or flush cutters to remove strings and supports. X-Acto knives work well for fine trimming.
+        </p>
+      </div>
+      <div class="tpu-feature-card">
+        <h3 class="tpu-card-title">Surface Finishing</h3>
+        <p>
+          Difficult to sand due to flexibility. Can be smoothed with careful application of a heat gun (brief exposure).
+        </p>
+      </div>
+      <div class="tpu-feature-card">
+        <h3 class="tpu-card-title">Bonding & Assembly</h3>
+        <p>
+          Bonds well with cyanoacrylate (super glue), epoxy, or specialized polyurethane adhesives. Can be stitched or riveted.
+        </p>
+      </div>
+      <div class="tpu-feature-card">
+        <h3 class="tpu-card-title">Painting</h3>
+        <p>
+          Requires flexible primer and flexible paint (like paints for vinyl or rubber). Standard paints will crack when flexed.
+        </p>
+      </div>
+    </div>
+    
+    <div class="tpu-tip-box">
+      <strong>Design Tip:</strong> When designing for TPU, include fillets and rounded corners. Sharp corners create stress concentrations that can lead to tearing when the part is flexed.
+    </div>
+  </section>
+
+</main>
+
+</body>
+</html>
