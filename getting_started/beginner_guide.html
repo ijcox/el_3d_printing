@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beginnerâs Guide to 3D Printing</title>
+  <style>
+    :root {
+      --bg: #FFFAF0;
+      --card: #008080;
+      --accent: #5F9EA0;
+      --text: #004d4d;
+      --muted: #4f7f7f;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: linear-gradient(180deg, #FFFFF0, var(--bg));
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 3rem 2rem 2rem;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+      color: var(--card);
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: var(--muted);
+      max-width: 900px;
+    }
+
+    main {
+      padding: 2rem;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    section h2 {
+      font-size: 1.9rem;
+      margin-bottom: 0.75rem;
+      border-left: 4px solid var(--accent);
+      padding-left: 0.75rem;
+      color: var(--card);
+    }
+
+    section p {
+      margin-bottom: 1rem;
+      font-size: 1.05rem;
+      max-width: 900px;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+      max-width: 900px;
+    }
+
+    li {
+      margin-bottom: 0.6rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .card {
+      background: linear-gradient(180deg, #5F9EA0, var(--card));
+      color: #F0F8FF;
+      border-radius: 16px;
+      padding: 1.5rem;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Beginnerâs Guide to 3D Printing</h1>
+  <p>
+    This guide walks you through everything you need to know to get started with 3D printing,
+    from choosing a printer to completing your first successful print.
+  </p>
+</header>
+
+<main>
+
+  <section>
+    <h2>What You Need to Get Started</h2>
+    <p>
+      Before printing anything, youâll need a few essential components. Fortunately,
+      modern 3D printing has become very accessible to beginners.
+    </p>
+    <ul>
+      <li>A 3D printer (typically FDM for beginners)</li>
+      <li>Filament material (PLA is recommended)</li>
+      <li>Slicer software</li>
+      <li>A computer or device to prepare files</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Choosing Your First 3D Printer</h2>
+    <p>
+      Most beginners start with an FDM (Fused Deposition Modeling) printer because it is
+      affordable, easy to use, and widely supported.
+    </p>
+    <ul>
+      <li>Look for good community support</li>
+      <li>Auto bed leveling is a big plus</li>
+      <li>Open-source firmware and parts availability help long-term</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Understanding Filament</h2>
+    <p>
+      Filament is the material your printer uses to create objects. There are many types,
+      but beginners should start simple.
+    </p>
+    <div class="grid">
+      <div class="card" onclick="window.location.href='/o/page?o=word&w=PLA%20Filament'" style="cursor:pointer;">
+        <h3>PLA</h3>
+        <p>
+          The best filament for beginners. Easy to print, low warping,
+          and works on nearly all printers.
+        </p>
+      </div>
+      
+    </div>
+  </section>
+
+  <section>
+    <h2>From Model to Print</h2>
+    <p>
+      3D printers donât understand 3D models directly. A slicer converts models into
+      step-by-step instructions the printer follows.
+    </p>
+    <ul>
+      <li>Find or design a 3D model (STL or 3MF)</li>
+      <li>Open it in slicer software</li>
+      <li>Adjust basic settings</li>
+      <li>Export G-code and start the print</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Essential Print Settings for Beginners</h2>
+    <p>
+      You donât need to understand every setting at first. Focus on a few basics:
+    </p>
+    <ul>
+      <li>Layer height (0.2 mm is a good default)</li>
+      <li>Infill (15â20% is plenty for most prints)</li>
+      <li>Print temperature (use filament recommendations)</li>
+      <li>Bed adhesion (brim or skirt helps)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Your First Print</h2>
+    <p>
+      Start with a simple object, like a calibration cube or a small tool. These prints
+      help you understand how your printer behaves.
+    </p>
+    <ul>
+      <li>Watch the first layer closely</li>
+      <li>Stop the print if something goes wrong early</li>
+      <li>Donât chase perfection on the first try</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Common Beginner Mistakes</h2>
+    <ul>
+      <li>Printing too fast</li>
+      <li>Ignoring bed leveling</li>
+      <li>Changing too many settings at once</li>
+      <li>Using advanced materials too soon</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>What to Learn Next</h2>
+    <p>
+      Once youâre comfortable with the basics, you can start exploring advanced topics
+      like stronger materials, printer upgrades, and design techniques.
+    </p>
+    <ul>
+      <li><a href="/o/page?o=word&w=3D%20Printing%20Workflow">3D Printing Workflow</a></li>
+      <li><a href="/o/page?o=word&w=3D%20Printer%20Settings">3D Printer Settings</a></li>
+      <li><a href="/o/page?o=word&w=PLA%20Filament">PLA Filament</a></li>
+      <li><a href="/o/page?o=word&w=FDM%203D%20Printing">FDM 3D Printing</a></li>
+    </ul>
+  </section>
+
+</main>
+
+</body>
+</html>
