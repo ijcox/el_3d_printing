@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3D Printing Workflow</title>
+  <style>
+    :root {
+      --bg: #FFFAF0;
+      --card: #008080;
+      --accent: #5F9EA0;
+      --text: #004d4d;
+      --muted: #4f7f7f;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: linear-gradient(180deg, #FFFFF0, var(--bg));
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 3rem 2rem 2rem;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+      color: var(--card);
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: var(--muted);
+      max-width: 1000px;
+    }
+
+    main {
+      padding: 2rem;
+    }
+
+    section {
+      margin-bottom: 3.5rem;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 0.75rem;
+      border-left: 4px solid var(--accent);
+      padding-left: 0.75rem;
+      color: var(--card);
+    }
+
+    section p {
+      max-width: 1000px;
+      font-size: 1.05rem;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+      max-width: 1000px;
+    }
+
+    li {
+      margin-bottom: 0.6rem;
+    }
+
+    .step {
+      margin-top: 1.5rem;
+    }
+
+    .step h3 {
+      font-size: 1.4rem;
+      margin-bottom: 0.5rem;
+      color: var(--text);
+    }
+
+    .callout {
+      background: rgba(95, 158, 160, 0.15);
+      border-left: 4px solid var(--accent);
+      padding: 1rem 1.25rem;
+      margin: 1.5rem 0;
+      max-width: 1000px;
+    }
+
+    .resources a {
+      color: var(--card);
+      text-decoration: none;
+    }
+
+    .resources a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>3D Printing Workflow</h1>
+  <p>
+    The 3D printing workflow is the complete process that takes an idea from concept
+    to a finished physical object. Understanding this workflow is essential for
+    reliable prints, troubleshooting failures, and improving quality.
+  </p>
+</header>
+
+<main>
+
+  <section>
+    <h2>Overview of the Workflow</h2>
+    <p>
+      While printers and materials vary, the core workflow remains consistent across
+      almost all types of 3D printing.
+    </p>
+    <ul>
+      <li>Obtain or create a 3D model</li>
+      <li>Prepare the model in slicer software</li>
+      <li>Print the object</li>
+      <li>Post-process and evaluate the result</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Step 1: 3D Model Creation or Download</h2>
+    <div class="step">
+      <h3>Finding Models</h3>
+      <p>
+        Beginners often start by downloading existing models. These are usually
+        provided as STL or 3MF files.
+      </p>
+      <ul class="resources">
+        <li><a href="https://www.printables.com" target="_blank">Printables</a></li>
+        <li><a href="https://www.thingiverse.com" target="_blank">Thingiverse</a></li>
+        <li><a href="https://makerworld.com" target="_blank">MakerWorld</a></li>
+      </ul>
+    </div>
+
+    <div class="step">
+      <h3>Designing Your Own Models</h3>
+      <p>
+        Creating your own models gives you full control. Beginners typically start
+        with parametric or beginner-friendly CAD tools.
+      </p>
+      <ul>
+        <li>TinkerCAD (beginner-friendly)</li>
+        <li>Fusion (parametric design)</li>
+        <li>Blender (organic shapes)</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Step 2: Slicing the Model</h2>
+    <p>
+      Slicer software converts your 3D model into G-code — the instructions your
+      printer understands.
+    </p>
+    <ul>
+      <li>Import your model</li>
+      <li>Select your printer and material</li>
+      <li>Adjust print settings</li>
+      <li>Preview the toolpath</li>
+    </ul>
+
+    <div class="callout">
+      <strong>Beginner Tip:</strong> Start with default profiles. Modern slicers
+      provide well-tested presets that work for most situations.
+    </div>
+
+    <ul>
+      <li>Cura</li>
+      <li>PrusaSlicer</li>
+      <li>Bambu Studio</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Step 3: Preparing the Printer</h2>
+    <p>
+      Even the best slicer settings won’t help if the printer isn’t prepared correctly.
+    </p>
+    <ul>
+      <li>Level the build plate</li>
+      <li>Load filament</li>
+      <li>Clean the build surface</li>
+      <li>Verify nozzle temperature</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Step 4: Printing</h2>
+    <p>
+      Once printing starts, the most important moment is the first layer. A good
+      first layer dramatically increases the chance of success.
+    </p>
+    <ul>
+      <li>Watch the first layer closely</li>
+      <li>Pause or cancel if adhesion is poor</li>
+      <li>Avoid leaving during early layers</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Step 5: Post-Processing</h2>
+    <p>
+      After printing, parts often need cleanup or finishing depending on their purpose.
+    </p>
+    <ul>
+      <li>Remove supports</li>
+      <li>Sanding or smoothing</li>
+      <li>Painting or coating</li>
+      <li>Mechanical fitting or assembly</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Evaluating and Iterating</h2>
+    <p>
+      Rarely is the first print perfect. Learning to evaluate prints and iterate is
+      what separates beginners from experienced users.
+    </p>
+    <ul>
+      <li>Check dimensional accuracy</li>
+      <li>Identify weak points</li>
+      <li>Adjust one setting at a time</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Common Workflow Mistakes</h2>
+    <ul>
+      <li>Skipping slicer previews</li>
+      <li>Changing too many variables at once</li>
+      <li>Ignoring printer maintenance</li>
+      <li>Using the wrong material for the job</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Where to Go Next</h2>
+    <ul>
+      <li><a href="/o/page?o=word&w=Beginner%E2%80%99s%20Guide%20to%203D%20Printing">Beginner’s Guide to 3D Printing</a></li>
+      <li><a href="/o/page?o=word&w=3D%20Printer%20Settings">3D Printer Settings</a></li>
+      <li><a href="/o/page?o=word&w=PLA%20Filament">PLA Filament</a></li>
+      <li><a href="/o/page?o=word&w=FDM%203D%20Printing">FDM 3D Printing</a></li>
+    </ul>
+  </section>
+
+</main>
+
+</body>
+</html>
