@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FDM / FFF 3D Printing</title>
+  <style>
+    :root {
+      --bg: #FFFAF0;
+      --card: #008080;
+      --accent: #5F9EA0;
+      --text: #004d4d;
+      --muted: #4f7f7f;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: linear-gradient(180deg, #FFFFF0, var(--bg));
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 3rem 2rem 2rem;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+      color: var(--card);
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: var(--muted);
+      max-width: 1000px;
+    }
+
+    main {
+      padding: 2rem;
+    }
+
+    section {
+      margin-bottom: 3.5rem;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 0.75rem;
+      border-left: 4px solid var(--accent);
+      padding-left: 0.75rem;
+      color: var(--card);
+    }
+
+    section p {
+      max-width: 1000px;
+      font-size: 1.05rem;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+      max-width: 1000px;
+    }
+
+    li {
+      margin-bottom: 0.6rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .card {
+      background: linear-gradient(180deg, #5F9EA0, var(--card));
+      color: #F0F8FF;
+      border-radius: 16px;
+      padding: 1.5rem;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+    }
+
+    .callout {
+      background: rgba(95, 158, 160, 0.15);
+      border-left: 4px solid var(--accent);
+      padding: 1rem 1.25rem;
+      margin: 1.5rem 0;
+      max-width: 1000px;
+    }
+
+    a {
+      color: var(--card);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>FDM / FFF 3D Printing</h1>
+  <p>
+    FDM (Fused Deposition Modeling), also known as FFF (Fused Filament Fabrication),
+    is the most common type of consumer 3D printing. It builds objects by melting
+    thermoplastic filament and depositing it layer by layer.
+  </p>
+</header>
+
+<main>
+
+  <section>
+    <h2>What Is FDM / FFF?</h2>
+    <p>
+      In FDM printing, a continuous strand of plastic filament is pushed through a
+      heated nozzle. The nozzle moves in precise paths, laying down material one
+      layer at a time until the object is complete.
+    </p>
+    <p>
+      The terms FDM and FFF describe the same process. "FDM" is a trademarked term,
+      while "FFF" is the open, generic name.
+    </p>
+  </section>
+
+  <section>
+    <h2>How the Process Works</h2>
+    <ul>
+      <li>Filament is fed from a spool into the extruder</li>
+      <li>The nozzle heats the filament until it melts</li>
+      <li>Molten plastic is deposited onto the build plate</li>
+      <li>Each layer bonds to the previous one as it cools</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Main Components of an FDM Printer</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Extruder & Hotend</h3>
+        <p>
+          Pushes filament and melts it for deposition. Direct-drive and Bowden
+          setups affect flexibility and print speed.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Build Plate</h3>
+        <p>
+          The surface where prints are formed. Can be heated, textured, or flexible
+          to improve adhesion and removal.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Motion System</h3>
+        <p>
+          Stepper motors, belts, and rails control precise movement along X, Y,
+          and Z axes.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Controller & Firmware</h3>
+        <p>
+          Interprets G-code and coordinates heaters, motors, and sensors.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Common Materials Used in FDM</h2>
+    <p>
+      FDM printers support a wide range of thermoplastics, making them extremely
+      versatile.
+    </p>
+    <ul>
+      <li><a href="/o/page?o=word&w=PLA%20Filament">PLA</a> – easy, beginner-friendly</li>
+      <li>PETG – durable and flexible</li>
+      <li>ABS – strong and heat-resistant</li>
+      <li>TPU – flexible and rubber-like</li>
+      <li>Nylon – tough engineering material</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Strengths of FDM Printing</h2>
+    <ul>
+      <li>Affordable and widely available</li>
+      <li>Large build volumes possible</li>
+      <li>Huge variety of materials</li>
+      <li>Simple maintenance and upgrades</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Limitations of FDM Printing</h2>
+    <ul>
+      <li>Visible layer lines</li>
+      <li>Weaker layer-to-layer strength</li>
+      <li>Supports often required for overhangs</li>
+      <li>Lower detail than resin printing</li>
+    </ul>
+
+    <div class="callout">
+      <strong>Note:</strong> Many of these limitations can be reduced with proper
+      settings, material choice, and post-processing.
+    </div>
+  </section>
+
+  <section>
+    <h2>Typical Applications</h2>
+    <ul>
+      <li>Functional prototypes</li>
+      <li>Household tools and organizers</li>
+      <li>Mechanical parts</li>
+      <li>Educational projects</li>
+      <li>Hobby and DIY creations</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Learning and Improving with FDM</h2>
+    <p>
+      Mastery of FDM comes from understanding how settings, materials, and printer
+      hardware interact.
+    </p>
+    <ul>
+      <li><a href="/o/page?o=word&w=3D%20Printing%20Workflow">3D Printing Workflow</a></li>
+      <li><a href="/o/page?o=word&w=3D%20Printer%20Settings">3D Printer Settings</a></li>
+      <li><a href="/o/page?o=word&w=Beginner%E2%80%99s%20Guide%20to%203D%20Printing">Beginner’s Guide to 3D Printing</a></li>
+    </ul>
+  </section>
+
+</main>
+
+</body>
+</html>
