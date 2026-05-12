@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PLA Filament - The 3D Printing Standard</title>
+  <style>
+    /* PLA Page Specific Styles - Scoped for Embedding */
+    body.pla-body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: linear-gradient(180deg, #F1F8E9, #F0FFF0);
+      color: #1B5E20;
+      line-height: 1.6;
+    }
+
+    .pla-body * { box-sizing: border-box; }
+
+    .pla-header {
+      padding: 3rem 2rem 2rem;
+    }
+
+    .pla-title {
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+      color: #4CAF50;
+    }
+
+    .pla-intro {
+      font-size: 1.2rem;
+      color: #558B2F;
+      max-width: 1000px;
+    }
+
+    .pla-main {
+      padding: 2rem;
+    }
+
+    .pla-section {
+      margin-bottom: 3.5rem;
+    }
+
+    .pla-section-title {
+      font-size: 2rem;
+      margin-bottom: 0.75rem;
+      border-left: 4px solid #66BB6A;
+      padding-left: 0.75rem;
+      color: #4CAF50;
+    }
+
+    .pla-text {
+      max-width: 1000px;
+      font-size: 1.05rem;
+      margin-bottom: 1rem;
+    }
+
+    .pla-list {
+      padding-left: 1.5rem;
+      max-width: 1000px;
+    }
+
+    .pla-list-item {
+      margin-bottom: 0.6rem;
+    }
+
+    .pla-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .pla-feature-card {
+      background: linear-gradient(180deg, #66BB6A, #4CAF50);
+      color: #F8FFF8;
+      border-radius: 16px;
+      padding: 1.5rem;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    .pla-card-title {
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+    }
+
+    .pla-highlight-box {
+      background: rgba(102, 187, 106, 0.15);
+      border-left: 4px solid #66BB6A;
+      padding: 1.25rem 1.5rem;
+      margin: 1.5rem 0;
+      max-width: 1000px;
+      border-radius: 0 8px 8px 0;
+    }
+
+    .pla-highlight-box strong {
+      color: #4CAF50;
+    }
+
+    .pla-warning-box {
+      background: rgba(255, 193, 7, 0.15);
+      border: 1px solid #FFA000;
+      border-left: 4px solid #FF9800;
+      padding: 1rem 1.25rem;
+      margin: 1.5rem 0;
+      max-width: 1000px;
+    }
+
+    .pla-link {
+      color: #4CAF50;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .pla-link:hover {
+      text-decoration: underline;
+    }
+
+    .pla-property-table {
+      border-collapse: collapse;
+      width: 100%;
+      max-width: 1000px;
+      margin: 1.5rem 0;
+    }
+
+    .pla-table-header, .pla-table-cell {
+      border: 1px solid #66BB6A;
+      padding: 0.75rem;
+      text-align: left;
+    }
+
+    .pla-table-header {
+      background-color: rgba(76, 175, 80, 0.2);
+    }
+  </style>
+</head>
+<body class="pla-body">
+
+<header class="pla-header">
+  <h1 class="pla-title">PLA Filament</h1>
+  <p class="pla-intro">
+    Polylactic Acid (PLA) is the most popular and beginner-friendly material in FDM/FFF 3D printing. Derived from renewable resources like corn starch or sugarcane, it's easy to print, has a pleasant smell, and comes in a vast array of colors and blends.
+  </p>
+</header>
+
+<main class="pla-main">
+
+  <section class="pla-section">
+    <h2 class="pla-section-title">What Is PLA?</h2>
+    <p class="pla-text">
+      PLA is a biodegradable thermoplastic polymer made from fermented plant sugars. It's a rigid material with low thermal resistance but excellent printability, making it the default choice for hobbyists, educators, and anyone new to 3D printing.
+    </p>
+    <div class="pla-highlight-box">
+      <strong>Perfect for Beginners:</strong> PLA prints at relatively low temperatures, doesn't require a heated bed (though it helps), has minimal warping, and is widely available at an affordable price.
+    </div>
+  </section>
+
+  <section class="pla-section">
+    <h2 class="pla-section-title">Key Properties & Characteristics</h2>
+    <table class="pla-property-table">
+      <tr>
+        <th class="pla-table-header">Property</th>
+        <th class="pla-table-header">Description</th>
+      </tr>
+      <tr>
+        <td class="pla-table-cell"><strong>Print Temperature</strong></td>
+        <td class="pla-table-cell">190°C - 220°C (Nozzle)</td>
+      </tr>
+      <tr>
+        <td class="pla-table-cell"><strong>Bed Temperature</strong></td>
+        <td class="pla-table-cell">50°C - 70°C (Optional, but recommended)</td>
+      </tr>
+      <tr>
+        <td class="pla-table-cell"><strong>Strength & Rigidity</strong></td>
+        <td class="pla-table-cell">High stiffness, but relatively brittle under impact</td>
+      </tr>
+      <tr>
+        <td class="pla-table-cell"><strong>Heat Resistance</strong></td>
+        <td class="pla-table-cell">Low (~50-60°C). Parts can deform in a hot car or dishwasher.</td>
+      </tr>
+      <tr>
+        <td class="pla-table-cell"><strong>Warping/Shrinkage</strong></td>
+        <td class="pla-table-cell">Very low. Excellent dimensional stability during printing.</td>
+      </tr>
+      <tr>
+        <td class="pla-table-cell"><strong>Odor</strong></td>
+        <td class="pla-table-cell">Slight, sweet smell (like pancakes or syrup). Non-toxic fumes.</td>
+      </tr>
+      <tr>
+        <td class="pla-table-cell"><strong>Biodegradability</strong></td>
+        <td class="pla-table-cell">Yes, under industrial composting conditions (not in a home compost).</td>
+      </tr>
+    </table>
+  </section>
+
+  <section class="pla-section">
+    <h2 class="pla-section-title">Specialty PLA Variants</h2>
+    <p class="pla-text">
+      Basic PLA has evolved into numerous specialty filaments that maintain PLA's easy printing characteristics while adding unique properties.
+    </p>
+    <div class="pla-grid">
+      <div class="pla-feature-card">
+        <h3 class="pla-card-title">PLA+ / Pro PLA</h3>
+        <p>
+          Enhanced formulations with added polymers or modifiers for increased strength, layer adhesion, and impact resistance while maintaining easy printability.
+        </p>
+      </div>
+      <div class="pla-feature-card">
+        <h3 class="pla-card-title">Silk / Metallic PLA</h3>
+        <p>
+          Contains additives that give prints a shiny, silky, or metallic luster. Aesthetic filament for decorative models. Can be more brittle.
+        </p>
+      </div>
+      <div class="pla-feature-card">
+        <h3 class="pla-card-title">Wood-Filled PLA</h3>
+        <p>
+          Infused with wood fibers (e.g., bamboo, cedar). Prints look and smell like wood and can be sanded, stained, or varnished.
+        </p>
+      </div>
+      <div class="pla-feature-card">
+        <h3 class="pla-card-title">Glow-in-the-Dark PLA</h3>
+        <p>
+          Contains strontium aluminate pigments. Requires a hardened steel nozzle due to its abrasive nature. Charges under light.
+        </p>
+      </div>
+      <div class="pla-feature-card">
+        <h3 class="pla-card-title">Color-Changing PLA</h3>
+        <p>
+          Thermochromic (changes with temperature) or photochromic (changes with UV light) pigments create dynamic visual effects.
+        </p>
+      </div>
+      <div class="pla-feature-card">
+        <h3 class="pla-card-title">Carbon Fiber / Fiberglass PLA</h3>
+        <p>
+          Reinforced with short fibers for dramatically increased stiffness and reduced weight. Highly abrasive; requires a hardened nozzle.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="pla-section">
+    <h2 class="pla-section-title">Optimal Printing Settings & Tips</h2>
+    <ul class="pla-list">
+      <li class="pla-list-item"><strong>Temperature Tuning:</strong> Always perform a temperature tower test. Start at 200°C and adjust ±10°C based on results. Silk and matte PLAs often need higher temps (~215-225°C).</li>
+      <li class="pla-list-item"><strong>Bed Adhesion:</strong> Use a clean, slightly heated bed (60°C). For stubborn prints, apply a thin layer of glue stick, hairspray, or use a PEI sheet.</li>
+      <li class="pla-list-item"><strong>Cooling is Critical:</strong> Use 100% part cooling fan speed after the first few layers. This is essential for sharp details and successful overhangs.</li>
+      <li class="pla-list-item"><strong>Print Speed:</strong> 40-80 mm/s works well. Slow down for small details or intricate models.</li>
+      <li class="pla-list-item"><strong>Retraction:</strong> Typical settings: 4-7mm distance at 25-45 mm/s. Prevents stringing and blobs.</li>
+    </ul>
+    <div class="pla-warning-box">
+      <strong>Moisture is the Enemy:</strong> PLA is hygroscopic (absorbs moisture from the air). Wet filament leads to popping sounds, poor layer adhesion, and surface defects. Store PLA in a sealed container with desiccant when not in use.
+    </div>
+  </section>
+
+  <section class="pla-section">
+    <h2 class="pla-section-title">Strengths of PLA</h2>
+    <ul class="pla-list">
+      <li class="pla-list-item"><strong>Incredibly Easy to Print:</strong> Forgiving with settings, minimal warping, works on almost any printer.</li>
+      <li class="pla-list-item"><strong>Wide Availability & Low Cost:</strong> The most common filament, available in thousands of colors and brands at affordable prices.</li>
+      <li class="pla-list-item"><strong>Excellent Detail & Surface Finish:</strong> Low melting temperature allows for sharp corners and fine features with minimal stringing.</li>
+      <li class="pla-list-item"><strong>Safe & Low Odor:</strong> Can be printed in living spaces without heavy ventilation (though good airflow is still recommended).</li>
+      <li class="pla-list-item"><strong>Biodegradable:</strong> An eco-friendly choice when sourced from renewable materials (though it requires specific conditions to degrade).</li>
+    </ul>
+  </section>
+
+  <section class="pla-section">
+    <h2 class="pla-section-title">Limitations of PLA</h2>
+    <ul class="pla-list">
+      <li class="pla-list-item"><strong>Low Heat Resistance:</strong> Not suitable for parts exposed to warmth (e.g., car interiors, near electronics, outdoors in summer sun).</li>
+      <li class="pla-list-item"><strong>Brittleness:</strong> Can snap or crack under impact or stress, rather than bending. Not ideal for high-stress functional parts.</li>
+      <li class="pla-list-item"><strong>Poor Chemical Resistance:</strong> Degrades when exposed to many common solvents and chemicals.</li>
+      <li class="pla-list-item"><strong>Outdoor Degradation:</strong> UV light and moisture will cause it to become brittle and degrade over time.</li>
+      <li class="pla-list-item"><strong>Not Truly "Compostable" at Home:</strong> Requires industrial composting facilities (50-60°C) for timely breakdown.</li>
+    </ul>
+  </section>
+
+  <section class="pla-section">
+    <h2 class="pla-section-title">Ideal Applications</h2>
+    <p class="pla-text">PLA is perfect for projects where appearance, ease of printing, and low cost are priorities over mechanical strength and heat resistance.</p>
+    <div class="pla-grid">
+      <div class="pla-feature-card">
+        <h3 class="pla-card-title">Visual Prototypes & Models</h3>
+        <p>
+          Display models, architectural models, and concept prototypes where form is more important than function.
+        </p>
+      </div>
+      <div class="pla-feature-card">
+        <h3 class="pla-card-title">Decorative Objects</h3>
+        <p>
+          Vases, figurines, art pieces, cosplay props (non-structural), and household decorations.
+        </p>
+      </div>
+      <div class="pla-feature-card">
+        <h3 class="pla-card-title">Educational Projects</h3>
+        <p>
+          The standard for classrooms and workshops due to its safety, ease of use, and minimal equipment requirements.
+        </p>
+      </div>
+      <div class="pla-feature-card">
+        <h3 class="pla-card-title">Low-Stress Tools & Organizers</h3>
+        <p>
+          Drawer dividers, cable holders, templates, and simple jigs that aren't subjected to force or heat.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="pla-section">
+    <h2 class="pla-section-title">Post-Processing PLA Prints</h2>
+    <ul class="pla-list">
+      <li class="pla-list-item"><strong>Sanding:</strong> Start with coarse grit (120-220) and work up to fine grit (800-2000) for a smooth finish. Sand wet to avoid clogging paper and inhaling dust.</li>
+      <li class="pla-list-item"><strong>Priming & Painting:</strong> Use a filler primer to hide layer lines, then paint with acrylics or spray paints. PLA sands and paints very well.</li>
+      <li class="pla-list-item"><strong>Polishing:</strong> Can be flame-polished (carefully with a torch) or chemically smoothed with specific solvents in vapor baths (experimental).</li>
+      <li class="pla-list-item"><strong>Assembling:</strong> Use CA glue (super glue), epoxy, or PLA-specific adhesives for strong bonds.</li>
+    </ul>
+  </section>
+
+</main>
+
+</body>
+</html>
