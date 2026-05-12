@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What Is 3D Printing?</title>
+  <style>
+    :root {
+      --bg: #FFFAF0;
+      --card: #008080;
+      --accent: #5F9EA0;
+      --text: #004d4d;
+      --muted: #4f7f7f;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: linear-gradient(180deg, #FFFFF0, var(--bg));
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 3rem 2rem 2rem;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+      color: var(--card);
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: var(--muted);
+      max-width: 900px;
+    }
+
+    main {
+      padding: 2rem;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    section h2 {
+      font-size: 1.9rem;
+      margin-bottom: 0.75rem;
+      border-left: 4px solid var(--accent);
+      padding-left: 0.75rem;
+      color: var(--card);
+    }
+
+    section p {
+      margin-bottom: 1rem;
+      font-size: 1.05rem;
+      max-width: 900px;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+      max-width: 900px;
+    }
+
+    li {
+      margin-bottom: 0.6rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(220px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+      align-items: stretch;
+    }
+
+    .card {
+      background: linear-gradient(180deg, #5F9EA0, var(--card));
+      color: #F0F8FF;
+      border-radius: 16px;
+      padding: 1.5rem;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 15px 35px rgba(56,189,248,0.25);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+    }
+
+    footer {
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>What Is 3D Printing?</h1>
+  <p>
+    3D printing, also known as additive manufacturing, is a method of creating physical objects
+    from digital designs by building them layer by layer.
+  </p>
+</header>
+
+<main>
+
+  <section>
+    <h2>How 3D Printing Works</h2>
+    <p>
+      The 3D printing process begins with a digital model, usually created in CAD software
+      or downloaded from an online repository. This model is then processed by a slicer,
+      which converts it into instructions the printer can understand.
+    </p>
+    <ul>
+      <li>Create or obtain a 3D model</li>
+      <li>Slice the model into layers</li>
+      <li>Send instructions to the 3D printer</li>
+      <li>The printer builds the object layer by layer</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Why It’s Called Additive Manufacturing</h2>
+    <p>
+      Traditional manufacturing methods often remove material through cutting or drilling.
+      In contrast, 3D printing adds material only where it’s needed, reducing waste
+      and enabling complex geometries that would otherwise be impossible.
+    </p>
+  </section>
+
+  <section>
+    <h2>Major Types of 3D Printing</h2>
+    <p>
+      There are several different 3D printing technologies, each with unique strengths,
+      materials, and applications.
+    </p>
+    <div class="grid">
+      <div class="card" onclick="makeCard({ name: 'FDM 3D Printing' })">
+        <h3>FDM / FFF</h3>
+        <p>
+          Uses melted plastic filament deposited through a nozzle. Common, affordable,
+          and ideal for beginners.
+        </p>
+      </div>
+      <div class="card" onclick="makeCard({ name: 'SLA 3D Printing' })">
+        <h3>SLA / Resin</h3>
+        <p>
+          Uses liquid resin cured with UV light for extremely detailed prints.
+        </p>
+      </div>
+      <div class="card" onclick="makeCard({ name: 'SLS 3D Printing' })">
+        <h3>SLS</h3>
+        <p>
+          Uses powdered material fused by a laser, producing strong, support-free parts.
+        </p>
+      </div>
+      <div class="card" onclick="makeCard({ name: 'Metal 3D Printing' })">
+        <h3>Metal Printing</h3>
+        <p>
+          Industrial processes that fuse metal powders to create functional metal parts.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>What Can Be 3D Printed?</h2>
+    <p>
+      3D printing is used across many industries and hobbies. Common applications include:
+    </p>
+    <ul>
+      <li>Prototypes and product development</li>
+      <li>Tools, fixtures, and replacement parts</li>
+      <li>Medical devices and dental models</li>
+      <li>Hobby projects, toys, and figurines</li>
+      <li>Functional parts for home and workshop use</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Advantages of 3D Printing</h2>
+    <ul>
+      <li>Rapid prototyping and iteration</li>
+      <li>Low-cost customization</li>
+      <li>Minimal material waste</li>
+      <li>Ability to create complex geometries</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Limitations to Be Aware Of</h2>
+    <ul>
+      <li>Slower than mass production</li>
+      <li>Material and strength limitations</li>
+      <li>Surface finish may require post-processing</li>
+      <li>Requires calibration and tuning</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Is 3D Printing Right for You?</h2>
+    <p>
+      Whether you’re a hobbyist, engineer, artist, or entrepreneur, 3D printing offers
+      powerful tools for turning ideas into physical reality. Understanding the basics
+      helps you choose the right technology, materials, and workflow for your needs.
+    </p>
+  </section>
+
+</main>
+
+<script>
+  function makeCard(item) {
+    const href = `/o/page?o=word&w=${encodeURIComponent(item.name)}`;
+    window.location.href = href;
+  }
+</script>
+
+</body>
+</html>
