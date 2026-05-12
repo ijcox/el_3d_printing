@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carbon Fiber Filament - The Composite Powerhouse</title>
+  <style>
+    /* Carbon Fiber Page Specific Styles - Scoped for Embedding */
+    body.cf-body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: linear-gradient(180deg, #0C0C0C, #1A1A1A);
+      color: #CCCCCC;
+      line-height: 1.6;
+    }
+
+    .cf-body * { box-sizing: border-box; }
+
+    .cf-header {
+      padding: 3rem 2rem 2rem;
+    }
+
+    .cf-title {
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+      color: #302f2f;
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    }
+
+    .cf-intro {
+      font-size: 1.2rem;
+      color: #1a1a1a;
+      max-width: 1000px;
+    }
+
+    .cf-main {
+      padding: 2rem;
+    }
+
+    .cf-section {
+      margin-bottom: 3.5rem;
+    }
+
+    .cf-section-title {
+      font-size: 2rem;
+      margin-bottom: 0.75rem;
+      border-left: 4px solid #444444;
+      padding-left: 0.75rem;
+      color: #1a1a1a;
+    }
+
+    .cf-text {
+      max-width: 1000px;
+      font-size: 1.05rem;
+      margin-bottom: 1rem;
+      color: #1a1a1a;
+    }
+
+    .cf-list {
+      padding-left: 1.5rem;
+      max-width: 1000px;
+    }
+
+    .cf-list-item {
+      margin-bottom: 0.6rem;
+      color: #1a1a1a;
+    }
+
+    .cf-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .cf-feature-card {
+      background: linear-gradient(180deg, #2C2C2C, #1A1A1A);
+      color: #FFFFFF;
+      border-radius: 16px;
+      padding: 1.5rem;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+      border: 1px solid #444444;
+    }
+
+    .cf-card-title {
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+      color: #FFFFFF;
+    }
+
+    .cf-highlight-box {
+      background: rgba(68, 68, 68, 0.2);
+      border-left: 4px solid #666666;
+      padding: 1.25rem 1.5rem;
+      margin: 1.5rem 0;
+      max-width: 1000px;
+      border-radius: 0 8px 8px 0;
+    }
+
+    .cf-highlight-box strong {
+      color: #1a1a1a;
+    }
+
+    .cf-warning-box {
+      background: rgba(220, 53, 69, 0.2);
+      border: 1px solid #DC3545;
+      border-left: 4px solid #DC3545;
+      padding: 1rem 1.25rem;
+      margin: 1.5rem 0;
+      max-width: 1000px;
+    }
+
+    .cf-tip-box {
+      background: rgba(13, 202, 240, 0.2);
+      border: 1px solid #0DCAF0;
+      border-left: 4px solid #0DCAF0;
+      padding: 1rem 1.25rem;
+      margin: 1.5rem 0;
+      max-width: 1000px;
+    }
+
+    .cf-link {
+      color: #0DCAF0;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .cf-link:hover {
+      text-decoration: underline;
+    }
+
+    .cf-property-table {
+      border-collapse: collapse;
+      width: 100%;
+      max-width: 1000px;
+      margin: 1.5rem 0;
+      background: #1A1A1A;
+    }
+
+    .cf-table-header, .cf-table-cell {
+      border: 1px solid #444444;
+      padding: 0.75rem;
+      text-align: left;
+      color: #CCCCCC;
+    }
+
+    .cf-table-header {
+      background-color: rgba(68, 68, 68, 0.3);
+      color: #FFFFFF;
+    }
+
+    .cf-comparison-table {
+      border-collapse: collapse;
+      width: 100%;
+      max-width: 1000px;
+      margin: 1.5rem 0;
+      background: #1A1A1A;
+    }
+
+    .cf-comparison-header, .cf-comparison-cell {
+      border: 1px solid #444444;
+      padding: 0.75rem;
+      text-align: left;
+      color: #CCCCCC;
+    }
+
+    .cf-comparison-header {
+      background-color: rgba(68, 68, 68, 0.3);
+      color: #FFFFFF;
+    }
+
+    .cf-hardness-scale {
+      width: 100%;
+      max-width: 1000px;
+      margin: 1.5rem 0;
+      background: #2C2C2C;
+      border-radius: 8px;
+      padding: 1.5rem;
+      border: 1px solid #444444;
+    }
+
+    .cf-scale-bar {
+      height: 25px;
+      border-radius: 12px;
+      background: linear-gradient(to right, 
+        #555555 0%, 
+        #777777 25%, 
+        #999999 50%, 
+        #BBBBBB 75%, 
+        #DDDDDD 100%);
+      margin: 1.5rem 0;
+      position: relative;
+    }
+
+    .cf-scale-label {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 1rem;
+      font-weight: 600;
+    }
+
+    .cf-scale-item {
+      text-align: center;
+    }
+  </style>
+</head>
+<body class="cf-body">
+
+<header class="cf-header">
+  <h1 class="cf-title">Carbon Fiber Filament</h1>
+  <p class="cf-intro">
+    Carbon fiber reinforced filaments combine the strength and stiffness of aerospace composites with the accessibility of desktop 3D printing. These engineering-grade materials produce parts that rival metal in strength-to-weight ratio while being printable on modified consumer printers.
+  </p>
+</header>
+
+<main class="cf-main">
+
+  <section class="cf-section">
+    <h2 class="cf-section-title">What Is Carbon Fiber Filament?</h2>
+    <p class="cf-text">
+      Carbon fiber filament is a composite material where chopped carbon fibers (typically 5-20% by weight) are embedded in a thermoplastic matrix, most commonly nylon (PA), PLA, PETG, or ABS. The fibers dramatically increase stiffness, reduce weight, and minimize warping compared to the base polymer.
+    </p>
+    <div class="cf-highlight-box">
+      <strong>Not Pure Carbon Fiber:</strong> These filaments contain chopped fibers (0.2-0.5mm long), not continuous strands. They offer many benefits of carbon fiber composites but at desktop 3D printing scale. For continuous carbon fiber reinforcement, specialized printers like Markforged systems are required.
+    </div>
+  </section>
+
+  <section class="cf-section">
+    <h2 class="cf-section-title">Base Material Variants</h2>
+    <p class="cf-text">Carbon fiber is available with different polymer matrices, each offering unique properties:</p>
+    <div class="cf-grid">
+      <div class="cf-feature-card">
+        <h3 class="cf-card-title">Carbon Fiber Nylon (CF Nylon)</h3>
+        <p>
+          <strong>Most Common</strong> - Combines nylon's toughness with CF's stiffness. Excellent for functional parts. Requires high temps and dry printing.
+        </p>
+      </div>
+      <div class="cf-feature-card">
+        <h3 class="cf-card-title">Carbon Fiber PLA (CF PLA)</h3>
+        <p>
+          <strong>Easiest to Print</strong> - Maintains PLA's easy printability with increased stiffness and reduced warping. Lower temp requirements.
+        </p>
+      </div>
+      <div class="cf-feature-card">
+        <h3 class="cf-card-title">Carbon Fiber PETG (CF PETG)</h3>
+        <p>
+          <strong>Balanced Performance</strong> - Good chemical resistance and layer adhesion with improved stiffness over regular PETG.
+        </p>
+      </div>
+      <div class="cf-feature-card">
+        <h3 class="cf-card-title">Carbon Fiber ABS (CF ABS)</h3>
+        <p>
+          <strong>High Temp Applications</strong> - Reduced warping compared to pure ABS while maintaining heat resistance. Less common than CF nylon.
+        </p>
+      </div>
+      <div class="cf-feature-card">
+        <h3 class="cf-card-title">Carbon Fiber Polycarbonate (CF PC)</h3>
+        <p>
+          <strong>Professional Grade</strong> - Extreme temperature resistance and impact strength. Requires very high print temperatures (290-310°C).
+        </p>
+      </div>
+      <div class="cf-feature-card">
+        <h3 class="cf-card-title">Carbon Fiber PEEK/PEI</h3>
+        <p>
+          <strong>Industrial Grade</strong> - Aerospace and medical applications. Requires specialized high-temperature printers (380-400°C).
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cf-section">
+    <h2 class="cf-section-title">Key Properties & Characteristics</h2>
+    <table class="cf-property-table">
+      <tr>
+        <th class="cf-table-header">Property</th>
+        <th class="cf-table-header">Description</th>
+      </tr>
+      <tr>
+        <td class="cf-table-cell"><strong>Print Temperature</strong></td>
+        <td class="cf-table-cell">220°C - 280°C (Varies by base material)</td>
+      </tr>
+      <tr>
+        <td class="cf-table-cell"><strong>Bed Temperature</strong></td>
+        <td class="cf-table-cell">50°C - 100°C (Depends on base material)</td>
+      </tr>
+      <tr>
+        <td class="cf-table-cell"><strong>Stiffness Increase</strong></td>
+        <td class="cf-table-cell">2-4x stiffer than base polymer</td>
+      </tr>
+      <tr>
+        <td class="cf-table-cell"><strong>Weight Reduction</strong></td>
+        <td class="cf-table-cell">10-20% lighter than pure polymer</td>
+      </tr>
+      <tr>
+        <td class="cf-table-cell"><strong>Warping Reduction</strong></td>
+        <td class="cf-table-cell">Significantly reduced compared to pure polymer</td>
+      </tr>
+      <tr>
+        <td class="cf-table-cell"><strong>Abrasiveness</strong></td>
+        <td class="cf-table-cell">High - Requires hardened nozzle</td>
+      </tr>
+      <tr>
+        <td class="cf-table-cell"><strong>Layer Adhesion</strong></td>
+        <td class="cf-table-cell">Good to Excellent (depends on base material)</td>
+      </tr>
+      <tr>
+        <td class="cf-table-cell"><strong>Surface Finish</strong></td>
+        <td class="cf-table-cell">Matte, textured, with visible fibers</td>
+      </tr>
+      <tr>
+        <td class="cf-table-cell"><strong>Moisture Absorption</strong></td>
+        <td class="cf-table-cell">Same as base material (CF nylon still hygroscopic)</td>
+      </tr>
+    </table>
+  </section>
+
+  <section class="cf-section">
+    <h2 class="cf-section-title">Carbon Fiber vs. Base Materials</h2>
+    <table class="cf-comparison-table">
+      <tr>
+        <th class="cf-comparison-header">Property</th>
+        <th class="cf-comparison-header">CF Nylon</th>
+        <th class="cf-comparison-header">Pure Nylon</th>
+        <th class="cf-comparison-header">Improvement</th>
+      </tr>
+      <tr>
+        <td class="cf-comparison-cell"><strong>Stiffness</strong></td>
+        <td class="cf-comparison-cell">Very High</td>
+        <td class="cf-comparison-cell">Medium</td>
+        <td class="cf-comparison-cell">↑ 3-4x</td>
+      </tr>
+      <tr>
+        <td class="cf-comparison-cell"><strong>Warping</strong></td>
+        <td class="cf-comparison-cell">Low</td>
+        <td class="cf-comparison-cell">High</td>
+        <td class="cf-comparison-cell">↓ 70-80%</td>
+      </tr>
+      <tr>
+        <td class="cf-comparison-cell"><strong>Dimensional Accuracy</strong></td>
+        <td class="cf-comparison-cell">Excellent</td>
+        <td class="cf-comparison-cell">Good</td>
+        <td class="cf-comparison-cell">↑ Significant</td>
+      </tr>
+      <tr>
+        <td class="cf-comparison-cell"><strong>Surface Finish</strong></td>
+        <td class="cf-comparison-cell">Matte, Textured</td>
+        <td class="cf-comparison-cell">Smooth, Uniform</td>
+        <td class="cf-comparison-cell">Different texture</td>
+      </tr>
+      <tr>
+        <td class="cf-comparison-cell"><strong>Print Difficulty</strong></td>
+        <td class="cf-comparison-cell">Medium-Hard</td>
+        <td class="cf-comparison-cell">Hard</td>
+        <td class="cf-comparison-cell">↓ Easier than pure</td>
+      </tr>
+    </table>
+  </section>
+
+  <section class="cf-section">
+    <h2 class="cf-section-title">⚠️ Critical Requirements & Safety</h2>
+    
+    <div class="cf-warning-box">
+      <strong>HARDENED NOZZLE REQUIRED:</strong> Carbon fibers are extremely abrasive and will destroy brass nozzles within hours. You must use at minimum a hardened steel nozzle. Tungsten carbide or ruby nozzles are better for high-volume printing.
+    </div>
+    
+    <div class="cf-grid">
+      <div class="cf-feature-card">
+        <h3 class="cf-card-title">Printer Upgrades</h3>
+        <p>
+          <strong>Mandatory:</strong> Hardened steel nozzle<br>
+          <strong>Recommended:</strong> All-metal hotend for temps >245°C<br>
+          <strong>Optional:</strong> Abrasion-resistant extruder gears
+        </p>
+      </div>
+      <div class="cf-feature-card">
+        <h3 class="cf-card-title">Safety Considerations</h3>
+        <p>
+          Carbon fibers can become airborne during printing and post-processing. Wear:<br>
+          • N95 mask or respirator<br>
+          • Safety glasses<br>
+          • Gloves when handling parts
+        </p>
+      </div>
+      <div class="cf-feature-card">
+        <h3 class="cf-card-title">Ventilation</h3>
+        <p>
+          Carbon fibers and base polymer fumes require good ventilation. Use enclosure with filtration or print in well-ventilated area.
+        </p>
+      </div>
+      <div class="cf-feature-card">
+        <h3 class="cf-card-title">Cleanup</h3>
+        <p>
+          Clean printer thoroughly after use. Carbon fiber dust can contaminate other filaments. Use HEPA vacuum, not compressed air.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cf-section">
+    <h2 class="cf-section-title">Optimal Printing Settings</h2>
+    <div class="cf-grid">
+      <div class="cf-feature-card">
+        <h3 class="cf-card-title">CF Nylon Settings</h3>
+        <p>
+          <strong>Nozzle:</strong> 260-280°C<br>
+          <strong>Bed:</strong> 80-100°C<br>
+          <strong>Speed:</strong> 40-60 mm/s<br>
+          <strong>Dry filament</strong> before printing (4-8h at 80°C)
+        </p>
+      </div>
+      <div class="cf-feature-card">
+        <h3 class="cf-card-title">CF PLA Settings</h3>
+        <p>
+          <strong>Nozzle:</strong> 210-225°C<br>
+          <strong>Bed:</strong> 50-60°C<br>
+          <strong>Speed:</strong> 40-70 mm/s<br>
+          <strong>Cooling:</strong> 50-100% fan
+        </p>
+      </div>
+      <div class="cf-feature-card">
+        <h3 class="cf-card-title">CF PETG Settings</h3>
+        <p>
+          <strong>Nozzle:</strong> 235-250°C<br>
+          <strong>Bed:</strong> 70-80°C<br>
+          <strong>Speed:</strong> 40-60 mm/s<br>
+          <strong>Cooling:</strong> 20-50% fan
+        </p>
+      </div>
+      <div class="cf-feature-card">
+        <h3 class="cf-card-title">General Tips</h3>
+        <p>
+          • Print slower first layer<br>
+          • Use wider line width (0.5-0.6mm)<br>
+          • Higher flow rate (105-110%)<br>
+          • Minimal retraction to reduce wear
+        </p>
+      </div>
+    </div>
+    
+    <div class="cf-tip-box">
+      <strong>Pro Tip:</strong> When switching from carbon fiber back to regular filament, purge extensively (100+mm). Carbon fiber particles can remain in the nozzle and contaminate subsequent prints.
+    </div>
+  </section>
+
+  <section class="cf-section">
+    <h2 class="cf-section-title">Strengths of Carbon Fiber Filaments</h2>
+    <ul class="cf-list">
+      <li class="cf-list-item"><strong>Exceptional Stiffness:</strong> 2-4x stiffer than the base polymer, approaching aluminum's stiffness-to-weight ratio.</li>
+      <li class="cf-list-item"><strong>Reduced Warping:</strong> Fibers constrain polymer shrinkage, dramatically reducing warping compared to pure materials.</li>
+      <li class="cf-list-item"><strong>Improved Dimensional Stability:</strong> Parts hold their shape better during and after printing.</li>
+      <li class="cf-list-item"><strong>Lightweight:</strong> Lower density than pure polymer, creating stronger, lighter parts.</li>
+      <li class="cf-list-item"><strong>Professional Appearance:</strong> Matte black finish with visible fiber texture looks like industrial composites.</li>
+      <li class="cf-list-item"><strong>Good Heat Resistance:</strong> Maintains shape better at elevated temperatures than pure polymer.</li>
+      <li class="cf-list-item"><strong>Vibration Damping:</strong> Composite structure absorbs vibrations better than many metals.</li>
+      <li class="cf-list-item"><strong>Chemical Resistance:</strong> Inherits chemical resistance properties from base polymer.</li>
+    </ul>
+  </section>
+
+  <section class="cf-section">
+    <h2 class="cf-section-title">Limitations & Considerations</h2>
+    <ul class="cf-list">
+      <li class="cf-list-item"><strong>Abrasive:</strong> Requires hardened nozzle and can wear other printer components.</li>
+      <li class="cf-list-item"><strong>Reduced Layer Adhesion (sometimes):</strong> Fibers can interfere with layer bonding in some materials.</li>
+      <li class="cf-list-item"><strong>Brittleness:</strong> Increased stiffness often comes with reduced impact resistance compared to pure polymer.</li>
+      <li class="cf-list-item"><strong>Nozzle Clogging Risk:</strong> Fibers can accumulate and cause clogs, especially with small nozzles (&lt;0.4mm).</li>
+      <li class="cf-list-item"><strong>Poor Surface Finish for Post-Processing:</strong> Difficult to sand and finish due to exposed fibers.</li>
+      <li class="cf-list-item"><strong>Health Concerns:</strong> Airborne carbon fibers are respiratory irritants.</li>
+      <li class="cf-list-item"><strong>Higher Cost:</strong> Typically 2-3x more expensive than standard filaments.</li>
+      <li class="cf-list-item"><strong>Not Food Safe:</strong> Fibers can shed, making these filaments unsuitable for food contact.</li>
+      <li class="cf-list-item"><strong>Limited Color Options:</strong> Almost exclusively black due to carbon fiber content.</li>
+    </ul>
+  </section>
+
+  <section class="cf-section">
+    <h2 class="cf-section-title">Ideal Applications</h2>
+    <p class="cf-text">Carbon fiber filaments excel where stiffness, dimensional stability, and professional appearance are priorities.</p>
+    <div class="cf-grid">
+      <div class="cf-feature-card">
+        <h3 class="cf-card-title">Functional Prototypes</h3>
+        <p>
+          Engineering prototypes that need to mimic metal stiffness or undergo load testing.
+        </p>
+      </div>
+      <div class="cf-feature-card">
+        <h3 class="cf-card-title">Drone & RC Frames</h3>
+        <p>
+          Lightweight, stiff airframes and chassis that benefit from high strength-to-weight ratio.
+        </p>
+      </div>
+      <div class="cf-feature-card">
+        <h3 class="cf-card-title">Brackets & Mounts</h3>
+        <p>
+          Structural components that must resist bending under load without adding weight.
+        </p>
+      </div>
+      <div class="cf-feature-card">
+        <h3 class="cf-card-title">Tooling & Jigs</h3>
+        <p>
+          Fixtures, gauges, and assembly tools that need to maintain precision.
+        </p>
+      </div>
+      <div class="cf-feature-card">
+        <h3 class="cf-card-title">Automotive Parts</h3>
+        <p>
+          Interior components, brackets, and prototypes where weight savings matter.
+        </p>
+      </div>
+      <div class="cf-feature-card">
+        <h3 class="cf-card-title">Camera & Equipment</h3>
+        <p>
+          Camera rigs, lens supports, and equipment mounts requiring rigidity.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cf-section">
+    <h2 class="cf-section-title">Post-Processing & Safety</h2>
+    <div class="cf-grid">
+      <div class="cf-feature-card">
+        <h3 class="cf-card-title">Sanding & Machining</h3>
+        <p>
+          Use carbide tools and wet sanding. Dry sanding creates hazardous airborne fibers. Always wear PPE.
+        </p>
+      </div>
+      <div class="cf-feature-card">
+        <h3 class="cf-card-title">Surface Finishing</h3>
+        <p>
+          Difficult to achieve smooth finish. Can apply epoxy coating to seal surface and hide fibers.
+        </p>
+      </div>
+      <div class="cf-feature-card">
+        <h3 class="cf-card-title">Painting</h3>
+        <p>
+          Requires epoxy-based primer to seal fibers. Standard primers may not adhere well to fiber-reinforced surface.
+        </p>
+      </div>
+      <div class="cf-feature-card">
+        <h3 class="cf-card-title">Bonding</h3>
+        <p>
+          Bonds well with epoxy adhesives. Cyanoacrylate (super glue) works but may not penetrate fiber-rich surface.
+        </p>
+      </div>
+    </div>
+    
+    <div class="cf-warning-box">
+      <strong>⚠️ Post-Processing Safety:</strong> Always wear N95 respirator, safety glasses, and gloves when sanding, cutting, or drilling carbon fiber parts. Work in well-ventilated area and clean up with HEPA vacuum.
+    </div>
+  </section>
+
+</main>
+
+</body>
+</html>
