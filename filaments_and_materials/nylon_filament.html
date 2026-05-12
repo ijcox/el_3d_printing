@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nylon Filament - The Engineering Polymer</title>
+  <style>
+    /* Nylon Page Specific Styles - Scoped for Embedding */
+    body.nylon-body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: linear-gradient(180deg, #F0F0F0, #E8E8E8);
+      color: #2C3E50;
+      line-height: 1.6;
+    }
+
+    .nylon-body * { box-sizing: border-box; }
+
+    .nylon-header {
+      padding: 3rem 2rem 2rem;
+    }
+
+    .nylon-title {
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+      color: #34495E;
+    }
+
+    .nylon-intro {
+      font-size: 1.2rem;
+      color: #5D6D7E;
+      max-width: 1000px;
+    }
+
+    .nylon-main {
+      padding: 2rem;
+    }
+
+    .nylon-section {
+      margin-bottom: 3.5rem;
+    }
+
+    .nylon-section-title {
+      font-size: 2rem;
+      margin-bottom: 0.75rem;
+      border-left: 4px solid #5D6D7E;
+      padding-left: 0.75rem;
+      color: #34495E;
+    }
+
+    .nylon-text {
+      max-width: 1000px;
+      font-size: 1.05rem;
+      margin-bottom: 1rem;
+    }
+
+    .nylon-list {
+      padding-left: 1.5rem;
+      max-width: 1000px;
+    }
+
+    .nylon-list-item {
+      margin-bottom: 0.6rem;
+    }
+
+    .nylon-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .nylon-feature-card {
+      background: linear-gradient(180deg, #5D6D7E, #34495E);
+      color: #ECF0F1;
+      border-radius: 16px;
+      padding: 1.5rem;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    .nylon-card-title {
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+    }
+
+    .nylon-highlight-box {
+      background: rgba(93, 109, 126, 0.15);
+      border-left: 4px solid #5D6D7E;
+      padding: 1.25rem 1.5rem;
+      margin: 1.5rem 0;
+      max-width: 1000px;
+      border-radius: 0 8px 8px 0;
+    }
+
+    .nylon-highlight-box strong {
+      color: #34495E;
+    }
+
+    .nylon-warning-box {
+      background: rgba(231, 76, 60, 0.15);
+      border: 1px solid #E74C3C;
+      border-left: 4px solid #E74C3C;
+      padding: 1rem 1.25rem;
+      margin: 1.5rem 0;
+      max-width: 1000px;
+    }
+
+    .nylon-tip-box {
+      background: rgba(52, 152, 219, 0.15);
+      border: 1px solid #3498DB;
+      border-left: 4px solid #3498DB;
+      padding: 1rem 1.25rem;
+      margin: 1.5rem 0;
+      max-width: 1000px;
+    }
+
+    .nylon-link {
+      color: #34495E;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .nylon-link:hover {
+      text-decoration: underline;
+    }
+
+    .nylon-property-table {
+      border-collapse: collapse;
+      width: 100%;
+      max-width: 1000px;
+      margin: 1.5rem 0;
+    }
+
+    .nylon-table-header, .nylon-table-cell {
+      border: 1px solid #5D6D7E;
+      padding: 0.75rem;
+      text-align: left;
+    }
+
+    .nylon-table-header {
+      background-color: rgba(93, 109, 126, 0.2);
+    }
+
+    .nylon-challenge-card {
+      background: rgba(93, 109, 126, 0.1);
+      border: 2px solid #5D6D7E;
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .nylon-challenge-title {
+      margin-top: 0;
+      color: #2C3E50;
+    }
+  </style>
+</head>
+<body class="nylon-body">
+
+<header class="nylon-header">
+  <h1 class="nylon-title">Nylon Filament</h1>
+  <p class="nylon-intro">
+    Nylon (Polyamide) is a premium engineering thermoplastic renowned for its exceptional strength, durability, and chemical resistance. While challenging to print, it produces parts that can replace metal in many applications, making it the choice for high-performance functional components.
+  </p>
+</header>
+
+<main class="nylon-main">
+
+  <section class="nylon-section">
+    <h2 class="nylon-section-title">What Is Nylon Filament?</h2>
+    <p class="nylon-text">
+      Nylon is a family of synthetic polymers (polyamides) known for their outstanding mechanical properties. In 3D printing, Nylon 6 and Nylon 6/6 are most common, offering high strength-to-weight ratios, excellent layer adhesion, and natural flexibility that resists cracking under stress.
+    </p>
+    <div class="nylon-highlight-box">
+      <strong>The Professional's Material:</strong> Nylon bridges the gap between consumer filaments and industrial polymers. It's used for gears, bearings, mechanical assemblies, and functional prototypes that demand durability beyond what PLA, PETG, or ABS can offer.
+    </div>
+  </section>
+
+  <section class="nylon-section">
+    <h2 class="nylon-section-title">Key Properties & Characteristics</h2>
+    <table class="nylon-property-table">
+      <tr>
+        <th class="nylon-table-header">Property</th>
+        <th class="nylon-table-header">Description</th>
+      </tr>
+      <tr>
+        <td class="nylon-table-cell"><strong>Print Temperature</strong></td>
+        <td class="nylon-table-cell">240°C - 280°C (Nozzle)</td>
+      </tr>
+      <tr>
+        <td class="nylon-table-cell"><strong>Bed Temperature</strong></td>
+        <td class="nylon-table-cell">70°C - 100°C (Required)</td>
+      </tr>
+      <tr>
+        <td class="nylon-table-cell"><strong>Strength & Toughness</strong></td>
+        <td class="nylon-table-cell">Exceptional impact resistance, high tensile strength, natural flexibility</td>
+      </tr>
+      <tr>
+        <td class="nylon-table-cell"><strong>Heat Resistance</strong></td>
+        <td class="nylon-table-cell">Good (~80-100°C). Higher than PETG, lower than ABS.</td>
+      </tr>
+      <tr>
+        <td class="nylon-table-cell"><strong>Chemical Resistance</strong></td>
+        <td class="nylon-table-cell">Excellent resistance to oils, fuels, and many chemicals</td>
+      </tr>
+      <tr>
+        <td class="nylon-table-cell"><strong>Warping</strong></td>
+        <td class="nylon-table-cell">Moderate to High - Requires careful temperature management</td>
+      </tr>
+      <tr>
+        <td class="nylon-table-cell"><strong>Moisture Absorption</strong></td>
+        <td class="nylon-table-cell">Extremely High - Will absorb water from air within hours</td>
+      </tr>
+      <tr>
+        <td class="nylon-table-cell"><strong>Layer Adhesion</strong></td>
+        <td class="nylon-table-cell">Excellent - Layers fuse together almost indistinguishably</td>
+      </tr>
+      <tr>
+        <td class="nylon-table-cell"><strong>Abrasion Resistance</strong></td>
+        <td class="nylon-table-cell">Outstanding - Self-lubricating, ideal for moving parts</td>
+      </tr>
+    </table>
+  </section>
+
+  <section class="nylon-section">
+    <h2 class="nylon-section-title">Nylon Variants & Composites</h2>
+    <p class="nylon-text">Nylon is often enhanced with additives to improve specific properties for demanding applications.</p>
+    <div class="nylon-grid">
+      <div class="nylon-feature-card">
+        <h3 class="nylon-card-title">Nylon 6</h3>
+        <p>
+          Good balance of properties, easier to print than Nylon 6/6. Most common in filament form. Good impact strength and flexibility.
+        </p>
+      </div>
+      <div class="nylon-feature-card">
+        <h3 class="nylon-card-title">Nylon 6/6</h3>
+        <p>
+          Higher temperature resistance and stiffness than Nylon 6. More challenging to print. Industry standard for injection molding.
+        </p>
+      </div>
+      <div class="nylon-feature-card">
+        <h3 class="nylon-card-title">Carbon Fiber Nylon</h3>
+        <p>
+          Nylon reinforced with carbon fibers. Increased stiffness, reduced warping, improved dimensional stability. Abrasive - requires hardened nozzle.
+        </p>
+      </div>
+      <div class="nylon-feature-card">
+        <h3 class="nylon-card-title">Glass Fiber Nylon</h3>
+        <p>
+          Improved stiffness and heat resistance compared to pure nylon. Less abrasive than carbon fiber but still requires hardened nozzle.
+        </p>
+      </div>
+      <div class="nylon-feature-card">
+        <h3 class="nylon-card-title">Nylon Co-polymers</h3>
+        <p>
+          Modified nylons (like Taulman's alloys) with improved printability, reduced moisture absorption, or enhanced flexibility.
+        </p>
+      </div>
+      <div class="nylon-feature-card">
+        <h3 class="nylon-card-title">Nylon with MOF</h3>
+        <p>
+          Metal-Organic Frameworks added to reduce moisture absorption - significantly extends filament shelf life.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="nylon-section">
+    <h2 class="nylon-section-title">Critical Printing Challenges</h2>
+    
+    <div class="nylon-challenge-card">
+      <h3 class="nylon-challenge-title">⚠️ Moisture Absorption - The Biggest Challenge</h3>
+      <p><strong>Problem:</strong> Nylon absorbs 5-10% of its weight in water from humid air within 24 hours. Wet nylon causes severe printing defects:</p>
+      <ul class="nylon-list">
+        <li class="nylon-list-item">Popping, sizzling, and steam during printing</li>
+        <li class="nylon-list-item">Poor layer adhesion and weak parts</li>
+        <li class="nylon-list-item">Surface bubbles and roughness</li>
+        <li class="nylon-list-item">Dimensional inaccuracy</li>
+      </ul>
+      <p><strong>Solutions:</strong>
+        <ul class="nylon-list">
+          <li class="nylon-list-item"><strong>Dry before printing:</strong> 4-8 hours at 70-80°C in a filament dryer or food dehydrator</li>
+          <li class="nylon-list-item"><strong>Print from dry box:</strong> Continuous drying during printing is essential</li>
+          <li class="nylon-list-item"><strong>Store with desiccant:</strong> Vacuum-sealed bags with silica gel when not in use</li>
+          <li class="nylon-list-item"><strong>Consider nylon alloys:</strong> Some co-polymers have reduced moisture absorption</li>
+        </ul>
+      </p>
+    </div>
+
+    <div class="nylon-challenge-card">
+      <h3 class="nylon-challenge-title">⚠️ Warping & Adhesion Issues</h3>
+      <p><strong>Problem:</strong> Nylon contracts significantly as it cools, causing warping and bed adhesion failures.</p>
+      <p><strong>Solutions:</strong>
+        <ul class="nylon-list">
+          <li class="nylon-list-item"><strong>Enclosure is highly recommended</strong> to maintain stable ambient temperature</li>
+          <li class="nylon-list-item">Heated bed at 80-100°C</li>
+          <li class="nylon-list-item">Specialized bed surfaces: Garolite (G10), PEI, or buildTak with glue stick</li>
+          <li class="nylon-list-item">Large brims (15-25mm) for small contact area parts</li>
+          <li class="nylon-list-item">Print slower first layers (15-20 mm/s)</li>
+        </ul>
+      </p>
+    </div>
+
+    <div class="nylon-challenge-card">
+      <h3 class="nylon-challenge-title">⚠️ High Temperature Requirements</h3>
+      <p><strong>Problem:</strong> Nylon requires higher nozzle temperatures and may need printer upgrades.</p>
+      <p><strong>Solutions:</strong>
+        <ul class="nylon-list">
+          <li class="nylon-list-item"><strong>All-metal hotend required</strong> for temperatures above 245°C</li>
+          <li class="nylon-list-item">Capricorn or other high-temp PTFE tubes if below 245°C</li>
+          <li class="nylon-list-item">Thermistor and heater cartridge rated for 300°C+</li>
+          <li class="nylon-list-item">Hardened steel nozzle for carbon/glass fiber composites</li>
+        </ul>
+      </p>
+    </div>
+    
+    <div class="nylon-warning-box">
+      <strong>⚠️ Essential Pre-requisites:</strong> You cannot successfully print nylon without: 1) A filament dryer, 2) An all-metal hotend, 3) A heated bed, and 4) Dry storage solutions. Attempting otherwise will waste material and time.
+    </div>
+  </section>
+
+  <section class="nylon-section">
+    <h2 class="nylon-section-title">Optimal Printing Settings</h2>
+    <div class="nylon-grid">
+      <div class="nylon-feature-card">
+        <h3 class="nylon-card-title">Temperature Profile</h3>
+        <p>
+          <strong>Nozzle:</strong> 250-265°C (Pure Nylon)<br>
+          <strong>Nozzle:</strong> 260-280°C (Carbon Fiber)<br>
+          <strong>Bed:</strong> 80-100°C<br>
+          <strong>Enclosure:</strong> 40-50°C ambient<br>
+          <strong>No cooling fan</strong> or minimal (10-20%)
+        </p>
+      </div>
+      <div class="nylon-feature-card">
+        <h3 class="nylon-card-title">Print Speed</h3>
+        <p>
+          <strong>Default:</strong> 40-60 mm/s<br>
+          <strong>First Layer:</strong> 15-25 mm/s<br>
+          <strong>Outer Walls:</strong> 30-40 mm/s<br>
+          <strong>Infill:</strong> 50-70 mm/s<br>
+          Slower is generally better for quality
+        </p>
+      </div>
+      <div class="nylon-feature-card">
+        <h3 class="nylon-card-title">Retraction</h3>
+        <p>
+          <strong>Distance:</strong> 3-5mm (Direct)<br>
+          <strong>Speed:</strong> 30-40 mm/s<br>
+          Nylon strings moderately - reduce stringing with temperature tuning<br>
+          Enable coasting and wiping
+        </p>
+      </div>
+      <div class="nylon-feature-card">
+        <h3 class="nylon-card-title">Bed Surface & Adhesion</h3>
+        <p>
+          <strong>Best:</strong> Garolite (G10)<br>
+          <strong>Good:</strong> PEI with glue stick<br>
+          <strong>Alternative:</strong> BuildTak with glue stick<br>
+          <strong>Never:</strong> Bare glass
+        </p>
+      </div>
+    </div>
+    
+    <div class="nylon-tip-box">
+      <strong>Pro Tip:</strong> Print a temperature tower for every new nylon spool, even from the same brand. Optimal temperature can vary by 10-15°C between different batches and colors.
+    </div>
+  </section>
+
+  <section class="nylon-section">
+    <h2 class="nylon-section-title">Strengths of Nylon</h2>
+    <ul class="nylon-list">
+      <li class="nylon-list-item"><strong>Exceptional Strength & Durability:</strong> Highest impact resistance of common filaments, excellent fatigue resistance.</li>
+      <li class="nylon-list-item"><strong>Outstanding Layer Adhesion:</strong> Layers fuse almost completely, creating nearly isotropic parts.</li>
+      <li class="nylon-list-item"><strong>Excellent Chemical Resistance:</strong> Resistant to oils, fuels, solvents, and many chemicals.</li>
+      <li class="nylon-list-item"><strong>Natural Flexibility:</strong> Can bend significantly without breaking - won't shatter like PLA.</li>
+      <li class="nylon-list-item"><strong>Self-Lubricating:</strong> Low coefficient of friction, ideal for gears, bearings, and moving parts.</li>
+      <li class="nylon-list-item"><strong>Good Heat Resistance:</strong> Higher than PETG, suitable for many functional applications.</li>
+      <li class="nylon-list-item"><strong>Abrasion Resistant:</strong> Wears well in high-friction applications.</li>
+      <li class="nylon-list-item"><strong>Can Be Dyed:</strong> Absorbs fabric dyes for custom colors post-printing.</li>
+    </ul>
+  </section>
+
+  <section class="nylon-section">
+    <h2 class="nylon-section-title">Limitations & Considerations</h2>
+    <ul class="nylon-list">
+      <li class="nylon-list-item"><strong>Extreme Moisture Sensitivity:</strong> Requires continuous drying and dry storage - not a "print and forget" material.</li>
+      <li class="nylon-list-item"><strong>Difficult to Print:</strong> Demands proper equipment and careful setup.</li>
+      <li class="nylon-list-item"><strong>Warping Challenges:</strong> Large flat parts require expert techniques.</li>
+      <li class="nylon-list-item"><strong>Higher Cost:</strong> Typically 2-3x more expensive than PLA.</li>
+      <li class="nylon-list-item"><strong>Poor UV Resistance:</strong> Degrades in sunlight unless specially formulated.</li>
+      <li class="nylon-list-item"><strong>Stringing:</strong> Prone to stringing, requiring careful retraction tuning.</li>
+      <li class="nylon-list-item"><strong>Not Food Safe:</strong> Even food-grade nylon isn't recommended for prolonged food contact.</li>
+      <li class="nylon-list-item"><strong>Odor During Printing:</strong> Some formulations have a distinct smell.</li>
+    </ul>
+  </section>
+
+  <section class="nylon-section">
+    <h2 class="nylon-section-title">Ideal Applications</h2>
+    <p class="nylon-text">Nylon is the material of choice when performance matters more than ease of printing.</p>
+    <div class="nylon-grid">
+      <div class="nylon-feature-card">
+        <h3 class="nylon-card-title">Functional Gears & Bearings</h3>
+        <p>
+          Low-friction, durable moving parts that outperform other plastics.
+        </p>
+      </div>
+      <div class="nylon-feature-card">
+        <h3 class="nylon-card-title">High-Stress Brackets & Mounts</h3>
+        <p>
+          Parts that undergo vibration, impact, or constant stress.
+        </p>
+      </div>
+      <div class="nylon-feature-card">
+        <h3 class="nylon-card-title">Drone & RC Car Parts</h3>
+        <p>
+          Lightweight, strong components that can survive crashes.
+        </p>
+      </div>
+      <div class="nylon-feature-card">
+        <h3 class="nylon-card-title">Wear-Resistant Components</h3>
+        <p>
+          Bushings, guides, and parts subject to friction and wear.
+        </p>
+      </div>
+      <div class="nylon-feature-card">
+        <h3 class="nylon-card-title">Tool Handles & Grips</h3>
+        <p>
+          Comfortable, durable grips that absorb vibration.
+        </p>
+      </div>
+      <div class="nylon-feature-card">
+        <h3 class="nylon-card-title">Automotive & Machinery Parts</h3>
+        <p>
+          Components exposed to oils, fuels, or mechanical stress.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="nylon-section">
+    <h2 class="nylon-section-title">Post-Processing & Finishing</h2>
+    <div class="nylon-grid">
+      <div class="nylon-feature-card">
+        <h3 class="nylon-card-title">Machining & Threading</h3>
+        <p>
+          Nylon machines beautifully - can be drilled, tapped, milled, and turned with standard metalworking tools.
+        </p>
+      </div>
+      <div class="nylon-feature-card">
+        <h3 class="nylon-card-title">Sanding & Polishing</h3>
+        <p>
+          Sands well with progressive grits. Can be polished to a high gloss with proper technique.
+        </p>
+      </div>
+      <div class="nylon-feature-card">
+        <h3 class="nylon-card-title">Dyeing</h3>
+        <p>
+          Unique to nylon - can be dyed with fabric dyes (Rit, iDye Poly) for permanent, vibrant colors throughout the part.
+        </p>
+      </div>
+      <div class="nylon-feature-card">
+        <h3 class="nylon-card-title">Annealing</h3>
+        <p>
+          Can be annealed in mineral oil or sand at 150-160°C to increase crystallinity, improving strength and heat resistance.
+        </p>
+      </div>
+    </div>
+    
+    <div class="nylon-tip-box">
+      <strong>Dyeing Tip:</strong> For best results, dye nylon parts in near-boiling water with synthetic fabric dye for 10-30 minutes. The dye penetrates completely, coloring the entire part, not just the surface.
+    </div>
+  </section>
+
+</main>
+
+</body>
+</html>
