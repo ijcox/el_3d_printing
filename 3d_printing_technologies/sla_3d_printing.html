@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SLA / Resin 3D Printing</title>
+  <style>
+    :root {
+      --bg: #F0FAFF;
+      --card: #800080;
+      --accent: #9E5EA0;
+      --text: #4d004d;
+      --muted: #7f4f7f;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: linear-gradient(180deg, #F0F0FF, var(--bg));
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 3rem 2rem 2rem;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+      color: var(--card);
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: var(--muted);
+      max-width: 1000px;
+    }
+
+    main {
+      padding: 2rem;
+    }
+
+    section {
+      margin-bottom: 3.5rem;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 0.75rem;
+      border-left: 4px solid var(--accent);
+      padding-left: 0.75rem;
+      color: var(--card);
+    }
+
+    section p {
+      max-width: 1000px;
+      font-size: 1.05rem;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+      max-width: 1000px;
+    }
+
+    li {
+      margin-bottom: 0.6rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .card {
+      background: linear-gradient(180deg, #9E5EA0, var(--card));
+      color: #F8F0FF;
+      border-radius: 16px;
+      padding: 1.5rem;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+    }
+
+    .callout {
+      background: rgba(158, 94, 160, 0.15);
+      border-left: 4px solid var(--accent);
+      padding: 1rem 1.25rem;
+      margin: 1.5rem 0;
+      max-width: 1000px;
+    }
+
+    a {
+      color: var(--card);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>SLA / Resin 3D Printing</h1>
+  <p>
+    SLA (Stereolithography) is the original form of resin 3D printing, using a laser to cure liquid photopolymer resin into solid objects layer by layer. MSLA (Masked Stereolithography), which uses an LCD screen to mask UV light, is the most common consumer resin printing technology today.
+  </p>
+</header>
+
+<main>
+
+  <section>
+    <h2>What Is SLA / MSLA?</h2>
+    <p>
+      In resin printing, a light source (a laser in SLA, a UV LCD screen in MSLA) selectively cures a vat of liquid resin. Where the light touches, the resin solidifies. The build plate lifts the cured layer, and the process repeats to build the object from the bottom up (or top down in some industrial systems).
+    </p>
+    <p>
+      "SLA" is the original, trademarked laser-based process. "MSLA" or simply "Resin Printing" refers to the modern, affordable LCD-based method dominating the consumer market.
+    </p>
+  </section>
+
+  <section>
+    <h2>How the Process Works (MSLA)</h2>
+    <ul>
+      <li>A build plate is submerged just above the transparent vat bottom.</li>
+      <li>A UV LCD screen below the vat displays a mask of the current layer.</li>
+      <li>UV light shines through the screen, curing the resin against the build plate.</li>
+      <li>The plate lifts, the resin reflows, and the next layer is cured.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Main Components of a Resin Printer</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Light Source</h3>
+        <p>
+          UV Laser (SLA) or UV LED array shining through an LCD screen (MSLA). The LCD acts as a mask, defining the layer shape.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Resin Vat</h3>
+        <p>
+          A tank holding liquid resin, with a flexible Fluorinated Ethylene Propylene (FEP) or Polypropylene (PP) film at the bottom.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Build Plate</h3>
+        <p>
+          Attached to the Z-axis, it dips into the resin vat. Surface is often textured or sandblasted for strong adhesion.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Z-Axis & Controller</h3>
+        <p>
+          Provides precise vertical movement. The controller interprets sliced files to coordinate the light source and motion.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Common Materials Used in Resin Printing</h2>
+    <p>
+      Resins are formulated for different properties, offering high detail and smooth finishes.
+    </p>
+    <ul>
+      <li><a href="/o/page?o=word&w=Standard%20Resin">Standard Resin</a> – balanced detail and strength for general use</li>
+      <li>ABS-Like Resin – more durable and impact-resistant</li>
+      <li>Flexible / Elastic Resin – can bend and compress</li>
+      <li>High-Temperature Resin – withstands heat post-curing</li>
+      <li>Dental & Biocompatible Resins – for medical applications</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Strengths of Resin Printing</h2>
+    <ul>
+      <li>Exceptionally high detail and smooth surface finish</li>
+      <li>Excellent for small, intricate parts and miniatures</li>
+      <li>Isotropic parts (strength is uniform, not layer-dependent)</li>
+      <li>Fast print times per layer, especially for full build plate prints</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Limitations & Safety Considerations</h2>
+    <ul>
+      <li>Resin is messy, toxic, and requires careful handling</li>
+      <li>Post-processing (washing and UV curing) is mandatory</li>
+      <li>Build volumes are typically smaller than FDM</li>
+      <li>Resin parts can be brittle and degrade in sunlight</li>
+      <li>Higher material cost compared to filament</li>
+    </ul>
+
+    <div class="callout">
+      <strong>Safety Note:</strong> Always wear nitrile gloves and eye protection when handling uncured resin. Work in a well-ventilated area, as fumes can be an irritant.
+    </div>
+  </section>
+
+  <section>
+    <h2>Typical Applications</h2>
+    <ul>
+      <li>Jewelry casting and detailed art pieces</li>
+      <li>Tabletop gaming miniatures and models</li>
+      <li>Dental molds and surgical guides</li>
+      <li>High-detail prototypes for product design</li>
+      <li>Engineering components requiring fine features</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>The Resin Printing Workflow</h2>
+    <p>
+      Success with resin printing depends on a complete and careful workflow.
+    </p>
+    <ul>
+      <li>Slicing with specialized software for supports and hollowing</li>
+      <li>Printing in a controlled environment</li>
+      <li>Washing prints in isopropyl alcohol (IPA) or other solvents</li>
+      <li>Final curing in a UV curing station or sunlight</li>
+      <li>Sanding, priming, and painting for finished models</li>
+    </ul>
+    <p>Explore more: <a href="/o/page?o=word&w=Resin%20Printing%20Safety">Resin Printing Safety</a>, <a href="/o/page?o=word&w=Post-Processing%20Resin%20Prints">Post-Processing Resin Prints</a></p>
+  </section>
+
+</main>
+
+</body>
+</html>
