@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SLS 3D Printing</title>
+  <style>
+    :root {
+      --bg: #F8F8FF;
+      --card: #4682B4;
+      --accent: #5D8AA8;
+      --text: #003366;
+      --muted: #4A708B;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: linear-gradient(180deg, #F0F8FF, var(--bg));
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 3rem 2rem 2rem;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+      color: var(--card);
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: var(--muted);
+      max-width: 1000px;
+    }
+
+    main {
+      padding: 2rem;
+    }
+
+    section {
+      margin-bottom: 3.5rem;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 0.75rem;
+      border-left: 4px solid var(--accent);
+      padding-left: 0.75rem;
+      color: var(--card);
+    }
+
+    section p {
+      max-width: 1000px;
+      font-size: 1.05rem;
+      margin-bottom: 1rem;
+    }
+
+    ul, ol {
+      padding-left: 1.5rem;
+      max-width: 1000px;
+    }
+
+    li {
+      margin-bottom: 0.6rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .card {
+      background: linear-gradient(180deg, #5D8AA8, var(--card));
+      color: #F8FBFF;
+      border-radius: 16px;
+      padding: 1.5rem;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+    }
+
+    .callout {
+      background: rgba(93, 138, 168, 0.12);
+      border-left: 4px solid var(--accent);
+      padding: 1.25rem 1.5rem;
+      margin: 1.5rem 0;
+      max-width: 1000px;
+      border-radius: 0 8px 8px 0;
+    }
+
+    .callout strong {
+      color: var(--card);
+    }
+
+    a {
+      color: var(--card);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Selective Laser Sintering (SLS) 3D Printing</h1>
+  <p>
+    SLS is an industrial additive manufacturing technology that uses a high-power laser to fuse small particles of polymer powder. Unlike FDM or SLA, SLS requires no support structures, allowing for highly complex geometries and functional end-use parts.
+  </p>
+</header>
+
+<main>
+
+  <section>
+    <h2>What Is SLS Printing?</h2>
+    <p>
+      Selective Laser Sintering (SLS) is a powder bed fusion process. A thin layer of powder is spread across a build platform, and a CO₂ laser selectively scans the cross-section of the part, sintering (fusing) the powder particles together. The platform lowers, a new layer of powder is applied, and the process repeats until the build is complete.
+    </p>
+    <div class="callout">
+      <strong>Key Differentiator:</strong> The unsintered powder surrounding the part during printing acts as a natural support material. This allows for the creation of intricate, interlocking, and hollow structures that would be impossible with other 3D printing methods.
+    </div>
+  </section>
+
+  <section>
+    <h2>How the SLS Process Works</h2>
+    <ol>
+      <li><strong>Pre-heating:</strong> The build chamber is heated just below the powder's melting point to minimize thermal distortion.</li>
+      <li><strong>Powder Deposition:</strong> A recoating blade or roller spreads a thin layer (typically 0.08-0.15 mm) of powder across the build platform.</li>
+      <li><strong>Laser Scanning:</strong> The CO₂ laser scans the layer's cross-section, raising the temperature to fuse powder particles.</li>
+      <li><strong>Platform Lowering:</strong> The build platform lowers by one layer thickness.</li>
+      <li><strong>Repetition:</strong> Steps 2-4 repeat until the part is complete.</li>
+      <li><strong>Cooling & Depowdering:</strong> The entire build chamber cools slowly in a controlled process before parts are excavated from the powder bed.</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Main Components of an SLS Printer</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>CO₂ Laser</h3>
+        <p>
+          The high-power energy source (typically 30W-100W) that selectively sinters the powder. Galvo mirrors direct the laser beam with high speed and precision.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Powder Delivery System</h3>
+        <p>
+          Consists of powder feed pistons, a build piston, and a precision recoating mechanism to deposit uniform layers.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Heated Build Chamber</h3>
+        <p>
+          Maintains the powder at a consistent, elevated temperature just below sintering point to control crystallization and reduce warping.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Inert Atmosphere</h3>
+        <p>
+          Nitrogen or another inert gas is pumped into the build chamber to prevent oxidation and degradation of the polymer powder during sintering.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Primary Material: Nylon (PA)</h2>
+    <p>
+      Nylon 11 and Nylon 12 are the dominant materials for SLS, prized for their excellent mechanical properties, chemical resistance, and durability.
+    </p>
+    <ul>
+      <li><strong>PA 12 (Nylon 12):</strong> The most common. Offers a good balance of strength, stiffness, and detail. Low moisture absorption.</li>
+      <li><strong>PA 11 (Nylon 11):</strong> More flexible and impact-resistant than PA 12, with higher elongation at break. Derived from renewable castor oil.</li>
+      <li><strong>Glass-Filled / Aluminum-Filled Nylons:</strong> Composite powders that increase stiffness, thermal resistance, and dimensional stability.</li>
+      <li><strong>TPU (Powder Form):</strong> Flexible, elastomeric material for rubber-like parts.</li>
+    </ul>
+    <div class="callout">
+      <strong>Material Efficiency:</strong> Unused powder in an SLS build is typically ~95% recyclable. It is sieved, blended with fresh powder, and reused for subsequent prints.
+    </div>
+  </section>
+
+  <section>
+    <h2>Strengths of SLS Technology</h2>
+    <ul>
+      <li><strong>No Support Structures Required:</strong> Enables previously "unprintable" geometries like moving hinges, internal channels, and complex lattices.</li>
+      <li><strong>Isotropic & Functional Parts:</strong> Parts have near-uniform mechanical properties in all directions and can withstand functional testing and end-use.</li>
+      <li><strong>High Productivity:</strong> The entire build volume can be packed with parts (nesting), making it excellent for batch production.</li>
+      <li><strong>Excellent Surface Finish & Detail:</strong> The powder process results in a slightly grainy but uniform matte finish with good feature resolution.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Limitations & Considerations</h2>
+    <ul>
+      <li><strong>High Equipment Cost:</strong> Industrial SLS machines are significantly more expensive than consumer FDM or resin printers.</li>
+      <li><strong>Complex Post-Processing:</strong> Parts require extensive depowdering (often manual or with specialized stations) and may need bead blasting for final finish.</li>
+      <li><strong>Material Limitations:</strong> Primarily limited to nylons and a few specialty polymers. Color options are generally limited to white/grey, requiring dyeing or painting.</li>
+      <li><strong>Powder Handling:</strong> Fine powder poses inhalation risks and requires careful handling and storage in controlled environments.</li>
+      <li><strong>Size Constraints:</strong> While build volumes are substantial, they are fixed by the machine's chamber size.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Typical Applications</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Functional Prototypes</h3>
+        <p>
+          Durable parts that mimic the strength and performance of injection-molded plastics for fit, form, and function testing.
+        </p>
+      </div>
+      <div class="card">
+        <h3>End-Use Production</h3>
+        <p>
+          Low-to-medium volume manufacturing of complex final components for aerospace, automotive, and medical devices.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Complex Assemblies</h3>
+        <p>
+          Single printed pieces that replace multi-part assemblies (e.g., ducting with integrated mounts, living hinges).
+        </p>
+      </div>
+      <div class="card">
+        <h3>Medical & Dental</h3>
+        <p>
+          Custom surgical guides, anatomical models, and prosthetics that benefit from SLS's biocompatible nylons and design freedom.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Post-Processing for SLS Parts</h2>
+    <p>The journey from powder bed to finished part involves several key steps:</p>
+    <ul>
+      <li><strong>Cooling:</strong> The entire build chamber cools for several hours to prevent part warpage.</li>
+      <li><strong>Depowdering:</strong> Parts are excavated from the powder bed. Compressed air and bead blasting are used to remove loose powder, especially from internal channels.</li>
+      <li><strong>Recycling:</strong> Unused powder is collected, sieved, and mixed with virgin material for reuse.</li>
+      <li><strong>Media Tumbling / Bead Blasting:</strong> To achieve a uniform, smooth matte surface finish.</li>
+      <li><strong>Dyeing & Sealing:</strong> White Nylon 12 parts can be dyed various colors. A sealant can be applied to reduce porosity for fluid containment.</li>
+    </ul>
+  </section>
+
+</main>
+
+</body>
+</html>
