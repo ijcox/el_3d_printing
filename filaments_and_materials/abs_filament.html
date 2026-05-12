@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ABS Filament - The Industrial Workhorse</title>
+  <style>
+    /* ABS Page Specific Styles - Scoped for Embedding */
+    body.abs-body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: linear-gradient(180deg, #FFFAF0, #FFF5E6);
+      color: #8B4513;
+      line-height: 1.6;
+    }
+
+    .abs-body * { box-sizing: border-box; }
+
+    .abs-header {
+      padding: 3rem 2rem 2rem;
+    }
+
+    .abs-title {
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+      color: #D2691E;
+    }
+
+    .abs-intro {
+      font-size: 1.2rem;
+      color: #A0522D;
+      max-width: 1000px;
+    }
+
+    .abs-main {
+      padding: 2rem;
+    }
+
+    .abs-section {
+      margin-bottom: 3.5rem;
+    }
+
+    .abs-section-title {
+      font-size: 2rem;
+      margin-bottom: 0.75rem;
+      border-left: 4px solid #CD853F;
+      padding-left: 0.75rem;
+      color: #D2691E;
+    }
+
+    .abs-text {
+      max-width: 1000px;
+      font-size: 1.05rem;
+      margin-bottom: 1rem;
+    }
+
+    .abs-list {
+      padding-left: 1.5rem;
+      max-width: 1000px;
+    }
+
+    .abs-list-item {
+      margin-bottom: 0.6rem;
+    }
+
+    .abs-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .abs-feature-card {
+      background: linear-gradient(180deg, #CD853F, #D2691E);
+      color: #FFF8F0;
+      border-radius: 16px;
+      padding: 1.5rem;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    .abs-card-title {
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+    }
+
+    .abs-highlight-box {
+      background: rgba(205, 133, 63, 0.15);
+      border-left: 4px solid #CD853F;
+      padding: 1.25rem 1.5rem;
+      margin: 1.5rem 0;
+      max-width: 1000px;
+      border-radius: 0 8px 8px 0;
+    }
+
+    .abs-highlight-box strong {
+      color: #D2691E;
+    }
+
+    .abs-warning-box {
+      background: rgba(220, 53, 69, 0.15);
+      border: 1px solid #DC3545;
+      border-left: 4px solid #DC3545;
+      padding: 1rem 1.25rem;
+      margin: 1.5rem 0;
+      max-width: 1000px;
+    }
+
+    .abs-tip-box {
+      background: rgba(40, 167, 69, 0.15);
+      border: 1px solid #28A745;
+      border-left: 4px solid #28A745;
+      padding: 1rem 1.25rem;
+      margin: 1.5rem 0;
+      max-width: 1000px;
+    }
+
+    .abs-link {
+      color: #D2691E;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .abs-link:hover {
+      text-decoration: underline;
+    }
+
+    .abs-property-table {
+      border-collapse: collapse;
+      width: 100%;
+      max-width: 1000px;
+      margin: 1.5rem 0;
+    }
+
+    .abs-table-header, .abs-table-cell {
+      border: 1px solid #CD853F;
+      padding: 0.75rem;
+      text-align: left;
+    }
+
+    .abs-table-header {
+      background-color: rgba(205, 133, 63, 0.2);
+    }
+
+    .abs-challenge-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .abs-challenge-card {
+      background: rgba(205, 133, 63, 0.1);
+      border: 2px solid #CD853F;
+      border-radius: 12px;
+      padding: 1.5rem;
+    }
+
+    .abs-challenge-title {
+      margin-top: 0;
+      color: #8B4513;
+    }
+  </style>
+</head>
+<body class="abs-body">
+
+<header class="abs-header">
+  <h1 class="abs-title">ABS Filament</h1>
+  <p class="abs-intro">
+    Acrylonitrile Butadiene Styrene (ABS) is a classic engineering thermoplastic that set the standard for 3D printing before PLA became popular. Known for its toughness, heat resistance, and post-processing capabilities, ABS is the material of choice for functional, durable parts that need to withstand real-world use.
+  </p>
+</header>
+
+<main class="abs-main">
+
+  <section class="abs-section">
+    <h2 class="abs-section-title">What Is ABS?</h2>
+    <p class="abs-text">
+      ABS is a petroleum-based thermoplastic polymer composed of three monomers: acrylonitrile (chemical resistance), butadiene (toughness), and styrene (rigidity and processability). This combination creates a material that's strong, impact-resistant, and capable of withstanding higher temperatures than most consumer filaments.
+    </p>
+    <div class="abs-highlight-box">
+      <strong>The Original Workhorse:</strong> ABS has been used in injection molding for decades (LEGO bricks, automotive parts, electronic housings) and brings industrial-grade properties to desktop 3D printing for those willing to master its challenges.
+    </div>
+  </section>
+
+  <section class="abs-section">
+    <h2 class="abs-section-title">Key Properties & Characteristics</h2>
+    <table class="abs-property-table">
+      <tr>
+        <th class="abs-table-header">Property</th>
+        <th class="abs-table-header">Description</th>
+      </tr>
+      <tr>
+        <td class="abs-table-cell"><strong>Print Temperature</strong></td>
+        <td class="abs-table-cell">230°C - 260°C (Nozzle)</td>
+      </tr>
+      <tr>
+        <td class="abs-table-cell"><strong>Bed Temperature</strong></td>
+        <td class="abs-table-cell">90°C - 110°C (Required)</td>
+      </tr>
+      <tr>
+        <td class="abs-table-cell"><strong>Strength & Toughness</strong></td>
+        <td class="abs-table-cell">Excellent impact resistance, can bend before breaking</td>
+      </tr>
+      <tr>
+        <td class="abs-table-cell"><strong>Heat Resistance</strong></td>
+        <td class="abs-table-cell">High (~95-105°C). Can withstand boiling water.</td>
+      </tr>
+      <tr>
+        <td class="abs-table-cell"><strong>Glass Transition Temp (Tg)</strong></td>
+        <td class="abs-table-cell">~105°C</td>
+      </tr>
+      <tr>
+        <td class="abs-table-cell"><strong>Warping/Shrinkage</strong></td>
+        <td class="abs-table-cell">High - Significant thermal contraction during cooling</td>
+      </tr>
+      <tr>
+        <td class="abs-table-cell"><strong>Odor</strong></td>
+        <td class="abs-table-cell">Strong plastic smell during printing - Requires ventilation</td>
+      </tr>
+      <tr>
+        <td class="abs-table-cell"><strong>Post-Processing</strong></td>
+        <td class="abs-table-cell">Excellent - Can be sanded, drilled, tapped, and acetone smoothed</td>
+      </tr>
+    </table>
+  </section>
+
+  <section class="abs-section">
+    <h2 class="abs-section-title">Printing Challenges & Solutions</h2>
+    <p class="abs-text">ABS is notoriously difficult to print compared to PLA or PETG. Success requires addressing its three main challenges:</p>
+    
+    <div class="abs-challenge-grid">
+      <div class="abs-challenge-card">
+        <h3 class="abs-challenge-title">⚠️ Warping & Layer Separation</h3>
+        <p><strong>Cause:</strong> High thermal contraction during cooling causes corners to lift and layers to split.</p>
+        <p><strong>Solutions:</strong>
+          <ul class="abs-list">
+            <li class="abs-list-item"><strong>Enclosure is mandatory</strong> - Maintains consistent ~40-50°C ambient temperature</li>
+            <li class="abs-list-item">Heated bed at 100-110°C</li>
+            <li class="abs-list-item">Use brims (10-20mm) or rafts</li>
+            <li class="abs-list-item">Draft-free environment</li>
+          </ul>
+        </p>
+      </div>
+      
+      <div class="abs-challenge-card">
+        <h3 class="abs-challenge-title">⚠️ Fumes & Ventilation</h3>
+        <p><strong>Cause:</strong> ABS emits styrene and other volatile organic compounds (VOCs) when heated.</p>
+        <p><strong>Solutions:</strong>
+          <ul class="abs-list">
+            <li class="abs-list-item"><strong>Print in well-ventilated area</strong> or with exhaust fan</li>
+            <li class="abs-list-item">Use air purifier with HEPA+activated carbon filter</li>
+            <li class="abs-list-item">Consider ASA filament (similar properties, better fumes)</li>
+            <li class="abs-list-item">Never print in living spaces without proper ventilation</li>
+          </ul>
+        </p>
+      </div>
+      
+      <div class="abs-challenge-card">
+        <h3 class="abs-challenge-title">⚠️ Bed Adhesion</h3>
+        <p><strong>Cause:</strong> High bed temps needed, but parts can still warp off.</p>
+        <p><strong>Solutions:</strong>
+          <ul class="abs-list">
+            <li class="abs-list-item">PEI spring steel sheet (textured or smooth)</li>
+            <li class="abs-list-item">ABS slurry (ABS dissolved in acetone) as adhesive</li>
+            <li class="abs-list-item">Kapton tape with ABS slurry or hairspray</li>
+            <li class="abs-list-item">Garolite (G10) beds work exceptionally well</li>
+          </ul>
+        </p>
+      </div>
+    </div>
+    
+    <div class="abs-warning-box">
+      <strong>⚠️ Safety First:</strong> ABS fumes are an irritant and potentially harmful with prolonged exposure. Always use adequate ventilation. People with respiratory issues should avoid printing ABS.
+    </div>
+  </section>
+
+  <section class="abs-section">
+    <h2 class="abs-section-title">Optimal Printing Settings</h2>
+    <div class="abs-grid">
+      <div class="abs-feature-card">
+        <h3 class="abs-card-title">Temperature Profile</h3>
+        <p>
+          <strong>Nozzle:</strong> 240-250°C<br>
+          <strong>Bed:</strong> 100-110°C<br>
+          <strong>Enclosure:</strong> 40-50°C ambient<br>
+          <strong>First Layer:</strong> 5-10°C hotter nozzle/bed
+        </p>
+      </div>
+      <div class="abs-feature-card">
+        <h3 class="abs-card-title">Cooling Strategy</h3>
+        <p>
+          <strong>Part Cooling Fan:</strong> 0-20% maximum<br>
+          <strong>Only for bridges/overhangs</strong><br>
+          Excessive cooling causes warping and layer separation
+        </p>
+      </div>
+      <div class="abs-feature-card">
+        <h3 class="abs-card-title">Print Speed</h3>
+        <p>
+          <strong>Default:</strong> 40-60 mm/s<br>
+          <strong>First Layer:</strong> 20-30 mm/s<br>
+          <strong>Outer Walls:</strong> 25-35 mm/s<br>
+          <strong>Infill:</strong> 60-80 mm/s
+        </p>
+      </div>
+      <div class="abs-feature-card">
+        <h3 class="abs-card-title">Retraction</h3>
+        <p>
+          <strong>Distance:</strong> 4-6mm (Direct)<br>
+          <strong>Speed:</strong> 40-60 mm/s<br>
+          <strong>Extra restart:</strong> -0.5mm to reduce oozing<br>
+          ABS strings less than PETG
+        </p>
+      </div>
+    </div>
+    
+    <div class="abs-tip-box">
+      <strong>Pro Tip:</strong> Let ABS prints cool slowly in the enclosed printer. Sudden temperature changes (opening enclosure) can cause cracking or warping even after the print is complete.
+    </div>
+  </section>
+
+  <section class="abs-section">
+    <h2 class="abs-section-title">Strengths of ABS</h2>
+    <ul class="abs-list">
+      <li class="abs-list-item"><strong>High Heat Resistance:</strong> Can withstand temperatures that would melt PLA or deform PETG.</li>
+      <li class="abs-list-item"><strong>Excellent Toughness:</strong> Impact-resistant and durable - bends rather than shatters.</li>
+      <li class="abs-list-item"><strong>Superior Post-Processing:</strong> Can be smoothed with acetone vapor for professional finishes.</li>
+      <li class="abs-list-item"><strong>Good Chemical Resistance:</strong> Resists many oils, greases, and diluted acids.</li>
+      <li class="abs-list-item"><strong>Paintable & Glueable:</strong> Takes paint well without primer, bonds strongly with acetone or special ABS cements.</li>
+      <li class="abs-list-item"><strong>UV Resistance (with additives):</strong> Available in UV-stabilized formulations for outdoor use.</li>
+      <li class="abs-list-item"><strong>Cost-Effective:</strong> Often cheaper than PETG or specialty filaments.</li>
+    </ul>
+  </section>
+
+  <section class="abs-section">
+    <h2 class="abs-section-title">Limitations & Considerations</h2>
+    <ul class="abs-list">
+      <li class="abs-list-item"><strong>Difficult to Print:</strong> Requires enclosure, heated bed, and ventilation.</li>
+      <li class="abs-list-item"><strong>Toxic Fumes:</strong> Not suitable for unventilated spaces or around sensitive individuals.</li>
+      <li class="abs-list-item"><strong>High Warping Tendency:</strong> Large flat parts are particularly challenging.</li>
+      <li class="abs-list-item"><strong>Moisture Absorption:</strong> ABS absorbs moisture from air, affecting print quality.</li>
+      <li class="abs-list-item"><strong>Not Food Safe:</strong> Even food-grade ABS isn't recommended for food contact due to micro-cracks.</li>
+      <li class="abs-list-item"><strong>Lower Detail Resolution:</strong> Typically produces less sharp details than PLA due to higher temps and no cooling.</li>
+      <li class="abs-list-item"><strong>Bed Adhesion Challenges:</strong> Finding the right surface can be tricky.</li>
+    </ul>
+  </section>
+
+  <section class="abs-section">
+    <h2 class="abs-section-title">Ideal Applications</h2>
+    <p class="abs-text">ABS excels in applications where heat resistance, toughness, and post-processing matter more than easy printing.</p>
+    <div class="abs-grid">
+      <div class="abs-feature-card">
+        <h3 class="abs-card-title">Automotive Parts</h3>
+        <p>
+          Interior components, mounts, brackets, and prototypes that need heat resistance.
+        </p>
+      </div>
+      <div class="abs-feature-card">
+        <h3 class="abs-card-title">Functional Prototypes</h3>
+        <p>
+          Engineering prototypes that undergo stress testing, assembly, and real use.
+        </p>
+      </div>
+      <div class="abs-feature-card">
+        <h3 class="abs-card-title">Electronic Enclosures</h3>
+        <p>
+          Cases for electronics that may generate heat or need durability.
+        </p>
+      </div>
+      <div class="abs-feature-card">
+        <h3 class="abs-card-title">Tool & Jig Making</h3>
+        <p>
+          Custom tools, jigs, and fixtures for workshops that need to withstand force.
+        </p>
+      </div>
+      <div class="abs-feature-card">
+        <h3 class="abs-card-title">Cosplay & Props</h3>
+        <p>
+          Professional cosplay armor and props that will be sanded, painted, and handled.
+        </p>
+      </div>
+      <div class="abs-feature-card">
+        <h3 class="abs-card-title">Outdoor Applications</h3>
+        <p>
+          UV-stabilized ABS for outdoor fixtures, garden items, and weather-exposed parts.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="abs-section">
+    <h2 class="abs-section-title">Post-Processing & Acetone Smoothing</h2>
+    <p class="abs-text">ABS's killer feature is its response to acetone, allowing for professional-grade finishing.</p>
+    <div class="abs-grid">
+      <div class="abs-feature-card">
+        <h3 class="abs-card-title">Acetone Vapor Smoothing</h3>
+        <p>
+          <strong>Process:</strong> Suspend print above heated acetone (50-60°C) in sealed container for 10-30 minutes.<br>
+          <strong>Result:</strong> Glass-smooth surface, sealed layer lines.
+        </p>
+      </div>
+      <div class="abs-feature-card">
+        <h3 class="abs-card-title">Acetone Welding</h3>
+        <p>
+          <strong>Process:</strong> Apply acetone to joint surfaces, press together.<br>
+          <strong>Result:</strong> Stronger than original print, nearly invisible seams.
+        </p>
+      </div>
+      <div class="abs-feature-card">
+        <h3 class="abs-card-title">ABS Slurry</h3>
+        <p>
+          <strong>Process:</strong> Dissolve ABS scraps in acetone to make paste.<br>
+          <strong>Uses:</strong> Bed adhesive, filler for gaps/cracks, surface smoothing.
+        </p>
+      </div>
+      <div class="abs-feature-card">
+        <h3 class="abs-card-title">Traditional Finishing</h3>
+        <p>
+          <strong>Sanding:</strong> Sands beautifully from 120 to 2000+ grit.<br>
+          <strong>Painting:</strong> Takes paint exceptionally well without primer.<br>
+          <strong>Polishing:</strong> Can be polished to high gloss after sanding.
+        </p>
+      </div>
+    </div>
+    
+    <div class="abs-warning-box">
+      <strong>⚠️ Acetone Safety:</strong> Acetone is highly flammable and its vapors are harmful. Use in well-ventilated area, away from ignition sources, with proper PPE (gloves, goggles).
+    </div>
+  </section>
+
+</main>
+
+</body>
+</html>
