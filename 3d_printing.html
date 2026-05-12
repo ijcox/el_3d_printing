@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3D Printing</title>
+  <style>
+    :root {
+      --bg: #FFFAF0;
+      --card: #008080;
+      --accent: #F0F8FF;
+      --text: #008080;
+      --muted: #F0F8FF;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: linear-gradient(180deg, #FFFFF0, var(--bg));
+      color: var(--text);
+    }
+
+    header {
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.75rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      max-width: 720px;
+      margin: 0 auto;
+      color: #5F9EA0;
+      font-size: 1.1rem;
+    }
+
+    main {
+      padding: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    section h2 {
+      font-size: 1.75rem;
+      margin-bottom: 1rem;
+      border-left: 4px solid #5F9EA0;
+      padding-left: 0.75rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .card {
+      background: linear-gradient(180deg, #5F9EA0, var(--card));
+      border-radius: 16px;
+      padding: 1.25rem;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 15px 35px rgba(56,189,248,0.25);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+      color: var(--accent);
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <p>
+    Explore everything you need to know about 3D printing — from beginner fundamentals
+    to advanced materials, printer technologies, troubleshooting, and post‑processing.
+  </p>
+</header>
+
+<main>
+
+  <!-- Getting Started -->
+  <section>
+    <h2>Getting Started</h2>
+    <div class="grid">
+      <div class="card" onclick="makeCard({ name: 'What Is 3D Printing' })">
+        <h3>What is 3D Printing?</h3>
+        <p>Understand the basics, history, and core concepts of additive manufacturing.</p>
+      </div>
+      <div class="card" onclick="makeCard({ name: 'Beginner’s Guide to 3D Printing' })">
+        <h3>Beginner Guide</h3>
+        <p>A step‑by‑step introduction to your first successful print.</p>
+      </div>
+      <div class="card" onclick="makeCard({ name: '3D Printing Workflow' })">
+        <h3>Workflow</h3>
+        <p>From CAD model → slicer → printer → finished part.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Printer Technologies -->
+  <section>
+    <h2>3D Printing Technologies</h2>
+    <div class="grid">
+      <div class="card" onclick="makeCard({ name: 'FDM 3D Printing' })">
+        <h3>FDM / FFF</h3>
+        <p>Filament‑based printing — the most common and affordable technology.</p>
+      </div>
+      <div class="card" onclick="makeCard({ name: 'SLA 3D Printing' })">
+        <h3>SLA / Resin</h3>
+        <p>High‑detail resin printing using UV light and photopolymers.</p>
+      </div>
+      <div class="card" onclick="makeCard({ name: 'SLS 3D Printing' })">
+        <h3>SLS</h3>
+        <p>Industrial powder‑based printing with excellent strength.</p>
+      </div>
+      <div class="card" onclick="makeCard({ name: 'Metal 3D Printing' })">
+        <h3>Metal Printing</h3>
+        <p>Advanced additive manufacturing for metal parts.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filaments & Materials (FDM) -->
+  <section>
+    <h2>Filaments & Materials (FDM)</h2>
+    <div class="grid">
+      <div class="card" onclick="makeCard({ name: 'PLA Filament' })">
+        <h3>PLA</h3>
+        <p>Easy to print, beginner‑friendly, biodegradable filament.</p>
+      </div>
+      <div class="card" onclick="makeCard({ name: 'PETG Filament' })">
+        <h3>PETG</h3>
+        <p>Durable, flexible, and more heat‑resistant than PLA.</p>
+      </div>
+      <div class="card" onclick="makeCard({ name: 'ABS Filament' })">
+        <h3>ABS</h3>
+        <p>Strong and heat‑resistant, but requires controlled conditions.</p>
+      </div>
+      <div class="card" onclick="makeCard({ name: 'Nylon Filament' })">
+        <h3>Nylon</h3>
+        <p>Extremely strong and flexible engineering filament.</p>
+      </div>
+      <div class="card" onclick="makeCard({ name: 'TPU Filament' })">
+        <h3>TPU</h3>
+        <p>Flexible filament for rubber‑like parts.</p>
+      </div>
+      <div class="card" onclick="makeCard({ name: 'Carbon Fiber Reinforced Filament' })">
+        <h3>Carbon Fiber</h3>
+        <p>Reinforced filaments for strength and rigidity.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Software -->
+  <section>
+    <h2>Software & Design</h2>
+    <div class="grid">
+      <div class="card" onclick="makeCard({ name: '3D Printing Slicer Software' })">
+        <h3>Slicer Software</h3>
+        <p>Cura, PrusaSlicer, Bambu Studio, and more.</p>
+      </div>
+      <div class="card" onclick="makeCard({ name: 'CAD Software for 3D Printing' })">
+        <h3>CAD Design</h3>
+        <p>Fusion, Blender, TinkerCAD, and parametric design.</p>
+      </div>
+      <div class="card" onclick="makeCard({ name: '3D Printer Settings' })">
+        <h3>Print Settings</h3>
+        <p>Layer height, infill, supports, speeds, and temperatures.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Troubleshooting -->
+  <section>
+    <h2>Troubleshooting & Calibration</h2>
+    <div class="grid">
+      <div class="card" onclick="makeCard({ name: '3D Printer Bed Leveling' })">
+        <h3>Bed Leveling</h3>
+        <p>Manual and automatic leveling techniques.</p>
+      </div>
+      <div class="card" onclick="makeCard({ name: 'Common 3D Printing Failures' })">
+        <h3>Common Failures</h3>
+        <p>Warping, stringing, layer shifts, and adhesion issues.</p>
+      </div>
+      <div class="card" onclick="makeCard({ name: '3D Printer Maintenance' })">
+        <h3>Maintenance</h3>
+        <p>Keep your printer reliable and accurate.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Advanced Topics -->
+  <section>
+    <h2>Advanced Topics</h2>
+    <div class="grid">
+      <div class="card" onclick="makeCard({ name: 'Multi‑Material 3D Printing' })">
+        <h3>Multi‑Material Printing</h3>
+        <p>Print with multiple filaments or colors.</p>
+      </div>
+      <div class="card" onclick="makeCard({ name: '3D Printing Post‑Processing' })">
+        <h3>Post‑Processing</h3>
+        <p>Sanding, painting, vapor smoothing, and finishing.</p>
+      </div>
+      <div class="card" onclick="makeCard({ name: 'Designing Functional 3D Printed Parts' })">
+        <h3>Functional Parts</h3>
+        <p>Designing prints for strength and real‑world use.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<script>
+  function makeCard(item) {
+    const href = `/o/page?o=word&w=${encodeURIComponent(item.name)}`;
+    window.location.href = href;
+  }
+</script>
+
+</body>
+</html>
